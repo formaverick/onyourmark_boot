@@ -171,7 +171,8 @@ sequenceDiagram
 
 ## 🔗 ERD
 
-> ERD 이미지를 이곳에 삽입해주세요.
+<img width="600" height="710" alt="ERD diagram" src="https://github.com/user-attachments/assets/b4e1ec53-3b9a-43b2-819f-d74a4e2ed599" />
+
 
 <br>
 
