@@ -1,0 +1,91 @@
+[{
+    "id":"1",
+    "backSrc":"img/main_page/review/review1.jpeg",
+    "bottomSrc":"img/main_page/review/review1_1.jpg",
+    "text":"노바5 두번째 구매할정도로 만족도 최고네요^^",
+    "name":"윤",
+    "title":"노바블라스트 5 LUXE(1011C031020)",
+    "data":"4.9",
+    "review":"113"
+},{
+    "id":"2",
+    "backSrc":"img/main_page/review/review2.jpg",
+    "bottomSrc":"img/main_page/review/review2_1.jpg",
+    "text":"명불허전 슈블2입니다 사진은 275사이즈와 비교",
+    "name":"정",
+    "title":"슈퍼블라스트 2(1013A142400)",
+    "data":"5.0",
+    "review":"122"
+},{
+    "id":"3",
+    "backSrc":"img/main_page/review/review3.jpeg",
+    "bottomSrc":"img/main_page/review/review3_1.jpg",
+    "text":"러닝하기 좋은 러닝화예용",
+    "name":"네이버 페이 구",
+    "title":"미즈노 네오 젠 W(J1GD258621)",
+    "data":"5.0",
+    "review":"34"
+},{
+    "id":"4",
+    "backSrc":"img/main_page/review/review4.jpg",
+    "bottomSrc":"img/main_page/review/review4_1.jpg",
+    "text":"매장에서 보고 사려고 했는데 겨우 찾았네요.",
+    "name":"윤",
+    "title":"W 애슬레틱 긴팔티(NBNDE2P04219)",
+    "data":"5.0",
+    "review":"2"
+},{
+    "id":"5",
+    "backSrc":"img/main_page/review/review5.jpeg",
+    "bottomSrc":"img/main_page/review/review5_1.jpg",
+    "text":"모든 러닝에서 입을 수 있습니다. 두께가 있지만 요철감이 있어 시원합니다. 브랜드 시드니처급 티셔츠인 만큼 만듬새가 좋아요.",
+    "name":"안",
+    "title":"TANNUKI 와플 MHN 빅 티(124TA48DEM)",
+    "data":"5.0",
+    "review":"2"
+},{
+    "id":"6",
+    "backSrc":"img/main_page/review/review6.jpeg",
+    "bottomSrc":"img/main_page/review/review6_1.jpg",
+    "text":"흔치 않은 포켓터블 팬츠입니다. 타누키 온유어마크에서 구매해 왔는데 이 제품은 가격이 꽤 있다고 생각했습니다. 그러다가 세일 후 구매했는데 편하고 소재좋고 이뻐서 만족합니다.",
+    "name":"안",
+    "title":"TANNUKI 안단테 쇼츠(124TA45CAP)",
+    "data":"5.0",
+    "review":"1"
+},{
+    "id":"7",
+    "backSrc":"img/main_page/review/review7.jpg",
+    "bottomSrc":"img/main_page/review/review7_1.jpg",
+    "text":"신발 자체는 만족합니다.",
+    "name":"권",
+    "title":"W860K13(NBPFE007B) 프레쉬폼x 860 V13",
+    "data":"5.0",
+    "review":"2개"
+},{
+    "id":"8",
+    "backSrc":"img/main_page/review/review8.jpeg",
+    "bottomSrc":"img/main_page/review/review8_1.jpg",
+    "text":"반친수 up하길 넘 잘한거 같습니다.",
+    "name":"박",
+    "title":"MMORCB5(NBPFFB104G) 프레쉬폼x 모어 V5 (D)",
+    "data":"4.0",
+    "review":"2"
+},{
+    "id":"9",
+    "backSrc":"img/main_page/review/review9.jpg",
+    "bottomSrc":"img/main_page/review/review9_1.jpg",
+    "text":"이쁩니다 다음주 시착해보려합니다 가격이 무서운것 빼곤 최고~",
+    "name":"황",
+    "title":"S/LAB 울트라 더스트(L47723900)",
+    "data":"5.0",
+    "review":"1"
+},{
+    "id":"10",
+    "backSrc":"img/main_page/review/review10.jpeg",
+    "bottomSrc":"img/main_page/review/review10_1.jpg",
+    "text":"가볍고 좋습니다. 색감이 너무 이뻐서 못참고 구매했어요!!",
+    "name":"이",
+    "title":"패스트 알 나이트로 엘리트 3(31206001)",
+    "data":"4.9",
+    "review":"409"
+}]

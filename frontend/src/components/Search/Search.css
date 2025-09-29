@@ -1,0 +1,143 @@
+.searchBox {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1070;
+    background-color: #fff;
+    padding: 40px 20px 20px 20px;
+}
+
+.searchDeleteBtn {
+    width: 1450px;
+    height: 32px;
+    margin: 0 auto;
+}
+
+.searchDeleteBtn img {
+    width: 32px;
+    height: 32px;
+    float: right;
+    cursor: pointer;
+}
+
+.searchMainBox {
+    width: 800px;
+    height: 52px;
+    margin: 0 auto;
+    margin-top: 44px;
+    border-bottom: 1px solid #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.searchMainBox input {
+    width: 90%;
+    height: 45px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    line-height: 28px;
+    color: #121212;
+    text-indent: 5px;
+    letter-spacing: -1.5px;
+}
+
+.searchMainBox img{
+    width: 40px;
+    height: 40px;
+}
+
+.searchlastBox {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchlastBox > div {
+    width: 47%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.searchlastBox > div > div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchlastBox div p {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #1a1a1a;
+}
+
+.searchlastBox div span{
+    font: 13px;
+    color: #c0c0c0;
+}
+
+.searchLank table {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+}
+
+.searchLank .topRed {
+    color: #f53535;
+}
+
+.topBold {
+    font-weight: 600;
+}
+
+.searchLank th {
+    width: 10px;
+    padding-top: 25px;
+    color: #747474;
+    font-weight: 600;
+}
+
+.searchLank td {
+    color: #afafaf;
+    cursor: pointer;
+}
+
+.searchLog span {
+    cursor: pointer;
+}
+
+.searchLog span:hover {
+    font-weight: 600;
+}
+
+.searchLog table {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-size: 15px;
+}
+
+.searchLog th {
+    width: 95%;
+    padding-top: 25px;
+    color: #747474;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.searchLog th:hover {
+    font-weight: 600;
+}
+
+.searchLog td {
+    color: #afafaf;
+    cursor: pointer;
+}

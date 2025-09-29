@@ -1,0 +1,44 @@
+.sliderWrap {
+  width: 1900px;
+  height: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainSlider {
+  width: 1900px;
+  height: 800px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.mainSlider ul {
+  position: relative;
+  width: 1900px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.mainSlider ul li {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1900px;
+  height: 100%;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.mainSlider ul li img {
+  width: 1900px;
+  height: 100%;
+}
+
+.mainSlider ul li.active {
+  opacity: 1;
+  z-index: 1;
+}

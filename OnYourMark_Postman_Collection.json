@@ -1,0 +1,448 @@
+{
+  "info": {
+    "_postman_id": "onyourmark-full-collection",
+    "name": "OnYourMark API (Full)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "OnYourMark 프로젝트의 전체 API 명세. React + Spring Boot + Flask 기반 풀스택 애플리케이션의 백엔드 API를 포함합니다."
+  },
+  "item": [
+    {
+      "name": "인증 (Auth)",
+      "item": [
+        {
+          "name": "회원가입 (Signup)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userid\": \"testuser\",\n  \"password\": \"password123\",\n  \"username\": \"테스트유저\",\n  \"email\": \"test@example.com\",\n  \"phone\": \"010-1234-5678\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/signup",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "signup"]
+            }
+          }
+        },
+        {
+          "name": "로그인 (Login)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userid\": \"testuser\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/auth/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "auth", "login"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "회원 (Member)",
+      "item": [
+        {
+          "name": "비밀번호 확인 (Verify Password)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/members/verify",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "members", "verify"]
+            }
+          }
+        },
+        {
+          "name": "내 정보 조회 (My Info)",
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/members/member",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "members", "member"]
+            }
+          }
+        },
+        {
+          "name": "내 정보 수정 (Update My Info)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"새로운이름\",\n  \"email\": \"new@example.com\",\n  \"phone\": \"010-9876-5432\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/members/update",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "members", "update"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "리뷰 (Review)",
+      "item": [
+        {
+          "name": "리뷰 작성 (Create Review)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "content",
+                  "value": "이 신발 정말 좋아요! AI 감성 분석 테스트.",
+                  "type": "text"
+                },
+                {
+                  "key": "imgs",
+                  "type": "file",
+                  "src": "/path/to/your/image.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/review",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "review"]
+            }
+          }
+        },
+        {
+          "name": "리뷰 목록 조회 (List Reviews)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/review?page=0&size=10&sort=createdAt,desc",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "review"],
+              "query": [
+                { "key": "page", "value": "0" },
+                { "key": "size", "value": "10" },
+                { "key": "sort", "value": "createdAt,desc" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "리뷰 상세 조회 (Get Review)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/review/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "review", "1"]
+            }
+          }
+        },
+        {
+          "name": "리뷰 삭제 (Delete Review)",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/review/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "review", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Q&A (Board)",
+      "item": [
+        {
+          "name": "질문 작성 (Create Question)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Q&A 질문입니다.\",\n  \"content\": \"궁금한 점이 있어서 문의드립니다.\",\n  \"writerName\": \"비회원\",\n  \"isSecret\": false,\n  \"postPassword\": \"guest123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/board/new",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "board", "new"]
+            }
+          }
+        },
+        {
+          "name": "질문 목록 조회 (List Questions)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/board?page=0&size=10&sort=createdAt,desc",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "board"],
+              "query": [
+                { "key": "page", "value": "0" },
+                { "key": "size", "value": "10" },
+                { "key": "sort", "value": "createdAt,desc" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "질문 상세 조회 (Get Question)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/board/1?password=guest123",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "board", "1"],
+              "query": [{ "key": "password", "value": "guest123" }]
+            }
+          }
+        },
+        {
+          "name": "질문 수정 (Update Question)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"수정된 질문 제목\",\n  \"content\": \"수정된 질문 내용입니다.\",\n  \"isSecret\": true,\n  \"postPassword\": \"newpass123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/board/1?password=guest123",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "board", "1"],
+              "query": [{ "key": "password", "value": "guest123" }]
+            }
+          }
+        },
+        {
+          "name": "질문 삭제 (Delete Question)",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/board/1?password=guest123",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "board", "1"],
+              "query": [{ "key": "password", "value": "guest123" }]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Q&A (Answer/Repost)",
+      "item": [
+        {
+          "name": "답변 작성 (Create Answer)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"문의주신 내용에 대해 답변드립니다.\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/reposts/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "reposts", "1"]
+            }
+          }
+        },
+        {
+          "name": "답변 조회 (Get Answer)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/reposts/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "reposts", "1"]
+            }
+          }
+        },
+        {
+          "name": "답변 수정 (Update Answer)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Content-Type", "value": "application/json" },
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"content\": \"수정된 답변 내용입니다.\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/reposts/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "reposts", "1"]
+            }
+          }
+        },
+        {
+          "name": "답변 삭제 (Delete Answer)",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/reposts/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "reposts", "1"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "공지 (Notice)",
+      "item": [
+        {
+          "name": "공지사항 작성 (Create Notice)",
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "새로운 공지사항 제목",
+                  "type": "text"
+                },
+                {
+                  "key": "content",
+                  "value": "공지사항 내용입니다.",
+                  "type": "text"
+                },
+                {
+                  "key": "mainImg",
+                  "type": "file",
+                  "src": "/path/to/main.jpg"
+                },
+                { "key": "subImgs", "type": "file", "src": "/path/to/sub1.jpg" }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/notices",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "notices"]
+            }
+          }
+        },
+        {
+          "name": "공지사항 목록 조회 (List Notices)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/notices",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "notices"]
+            }
+          }
+        },
+        {
+          "name": "공지사항 상세 조회 (Get Notice)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/api/notices/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "notices", "1"]
+            }
+          }
+        },
+        {
+          "name": "공지사항 수정 (Update Notice)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "title",
+                  "value": "수정된 공지사항 제목",
+                  "type": "text"
+                },
+                {
+                  "key": "content",
+                  "value": "수정된 공지사항 내용입니다.",
+                  "type": "text"
+                },
+                {
+                  "key": "mainImg",
+                  "type": "file",
+                  "src": "/path/to/new_main.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/notices/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "notices", "1"]
+            }
+          }
+        },
+        {
+          "name": "공지사항 삭제 (Delete Notice)",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              { "key": "Authorization", "value": "Bearer {{jwt_token}}" }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/notices/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "notices", "1"]
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8080" },
+    { "key": "jwt_token", "value": "YOUR_JWT_TOKEN_HERE" }
+  ]
+}

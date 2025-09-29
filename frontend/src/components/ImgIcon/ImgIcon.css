@@ -1,0 +1,28 @@
+.imgiconTop {
+    width: 1600px;
+    height: 660px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.imgiconTop img {
+    width: 33%;
+    height: 100%;
+}
+
+.imgiconBottom {
+    width: 1600px;
+    height: 660px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgiconBottom img {
+    width: 33%;
+    height: 100%;
+}

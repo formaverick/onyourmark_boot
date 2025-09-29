@@ -1,0 +1,409 @@
+.qaBoard {
+  width: 1450px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.qaBoardTop {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qaBoardTop h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.qaBoardTop > div {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.qaBtn {
+  width: 110px;
+  height: 40px;
+  font-size: 13px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #d6d6d6;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1a1a1a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.paBtn {
+  width: 40px;
+  height: 40px;
+  font-size: 13px;
+  background-color: #fff;
+  text-align: center;
+  border: 1px solid #d6d6d6;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #1a1a1a;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.qaBtn:hover {
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+}
+
+.qaBtn:disabled {
+  background-color: #f5f5f5;
+  color: #999;
+  cursor: not-allowed;
+  border: 1px solid #ddd;
+}
+
+.qaBtn:disabled:hover {
+  border: 1px solid #ddd;
+  color: #999;
+}
+
+.qaBoardBody {
+  width: 100%;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+.qaBoardBody table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.qaBoardBody thead th {
+  height: 29px;
+  padding: 15px 10px 16px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.qaBoardBody td {
+  padding: 15px 10px 16px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 29px;
+  font-size: 13px;
+  color: #1a1a1a;
+  line-height: 22px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.qaBoardBody td:nth-child(3) {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.qaBoardBody tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.qacontent {
+  border: 1px solid #e5e5e5;
+  padding: 20px 15px 50px 15px;
+  white-space: pre-line;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  min-height: 200px;
+  background-color: #fff;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 16px;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.passwordPrompt {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.passwordPrompt p {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+}
+
+.passwordPrompt input {
+  padding: 8px 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.passwordPrompt input:focus {
+  outline: none;
+}
+
+/* 폼 스타일 */
+.qaBoard input[type="text"],
+.qaBoard input[type="password"],
+.qaBoard textarea {
+  font-family: inherit;
+  font-size: 13px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.qaBoard input[type="text"]:focus,
+.qaBoard input[type="password"]:focus,
+.qaBoard textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.qaBoard textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* 체크박스 스타일 */
+.qaBoard input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.pagination .qaBtn {
+  width: 80px;
+  height: 35px;
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+.pagination span {
+  font-size: 14px;
+  color: #666;
+  margin: 0 15px;
+}
+
+/* BoardDetail 전용 스타일 */
+.boardDetailContainer {
+  margin-bottom: 40px;
+}
+
+.boardDetailHeader {
+  border-top: 2px solid #1a1a1a;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 20px 0;
+}
+
+.boardDetailHeader h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+
+.boardDetailInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #666;
+}
+
+.boardDetailContent {
+  padding: 30px 0;
+  min-height: 300px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.boardDetailButtons {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.boardReplySection {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+/* BoardPassword 전용 스타일 */
+.passwordContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.passwordBox {
+  width: 500px;
+  padding: 40px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  text-align: center;
+}
+
+.passwordIcon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.postInfo {
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+/* BoardWriteUser 전용 스타일 */
+.writeContainer {
+  padding: 20px 0;
+  border-top: 1px solid #ddd;
+}
+
+.writeForm {
+  margin-bottom: 20px;
+}
+
+.writeForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.writeForm input[type="text"],
+.writeForm input[type="password"],
+.writeForm textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.writeForm textarea {
+  resize: vertical;
+  min-height: 200px;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+/* 반응형 대응 */
+@media (max-width: 1500px) {
+  .qaBoard {
+    width: 95%;
+    max-width: 1450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .qaBoard {
+    width: 95%;
+    margin-top: 20px;
+  }
+
+  .qaBoardTop {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+
+  .qaBoardTop > div {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .qaBtn {
+    width: 100px;
+    height: 35px;
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+
+  .qaBoardBody table {
+    font-size: 11px;
+  }
+
+  .qaBoardBody td,
+  .qaBoardBody th {
+    padding: 10px 5px;
+  }
+
+  /* 모바일에서 일부 컬럼 숨김 */
+  .qaBoardBody th:nth-child(2),
+  .qaBoardBody td:nth-child(2),
+  .qaBoardBody th:nth-child(6),
+  .qaBoardBody td:nth-child(6) {
+    display: none;
+  }
+
+  /* 비밀번호 입력창 모바일 대응 */
+  .passwordBox {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  /* BoardDetail 모바일 대응 */
+  .boardDetailInfo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .boardDetailButtons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .boardDetailButtons > div {
+    width: 100%;
+    justify-content: center;
+  }
+}

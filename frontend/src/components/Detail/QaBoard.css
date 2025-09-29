@@ -1,0 +1,88 @@
+.qaBoard {
+    width: 1450px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.qaBoardTop {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.qaBoardTop h1 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.qaBoardTop > div {
+    width: 230px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.qaBtn {
+    width: 110px;
+    height: 40px;
+    font-size: 13px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #d6d6d6;
+    padding: 12px 20px;
+}
+
+.qaBtn:hover {
+    border: 1px solid #000;
+    color: #1a1a1a;
+}
+
+.qaBoardBody {
+    width: 100%;
+    height: auto;
+    margin-bottom: 80px;
+}
+
+.qaBoardBody table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.qaBoardBody thead th{
+    height: 29px;
+    padding: 15px 10px 16px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.qaBoardBody td {
+    padding: 15px 10px 16px;
+    border-bottom:  1px solid #e5e5e5;
+    height: 29px;
+    font-size: 13px;
+    color: #1a1a1a;
+    line-height: 22px;
+    text-align: center;
+}
+
+.qaBoardBody td:nth-child(3) {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.qacontent {
+    border: 1px solid #e5e5e5;
+    padding: 20px 15px 50px 15px;
+    white-space: pre-line;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}

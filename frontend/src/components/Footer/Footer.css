@@ -1,0 +1,132 @@
+footer {
+    width: 100%;
+    background-color: #e5e5e5;
+    padding-top: 40px;
+    font-size: 13px;
+    color: #222;
+}
+
+.footerWrap {
+    width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLeft, .footerRight {
+    width: 39%;
+}
+
+.footerRight {
+    text-align: right;
+}
+
+.footerLogo {
+    width: 160px;
+    margin-bottom: 30px;
+}
+
+.footerInfo > h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footerInfo strong {
+    font-weight: 600;
+}
+
+.footerInfo p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 13px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.payMents {
+    width: 65%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.payMents img {
+    width: 82px;
+    height: 38px;
+}
+
+.payMents p {
+    margin-top: 12px;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a8a8a8;
+    line-height: 1.6;
+}
+
+.footerMenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: right;
+}
+
+.footerMenu li {
+    cursor: pointer;
+    color: #333;
+}
+
+.footerBizInfo h4,
+.footerInfo h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.footerBizInfo strong {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.footerBizInfo p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 13px;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.footerSns {
+    margin-top: 140px;
+}
+
+.footerSns p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.footerSns img {
+    width: 30px;
+    height: 30px;
+    padding: 5px 5px;
+    border-radius: 50%;
+    border: 1px solid #949494;
+    margin-left: 10px;
+}
+
+.footerBottom p {
+    padding: 30px 0;
+    font-size: 12px;
+    color: #a8a8a8;
+    font-weight: 400;
+    text-align: right;
+    background-color: #e5e5e5;
+}

@@ -1,0 +1,48 @@
+.detailTab {
+    width: 1450px;
+    height: 75px;
+    margin: 0 auto;
+    padding-top: 150px;
+  }
+  
+  .detailTab ul {
+    display: flex;
+    text-align: center;
+  }
+  
+  .detailTab ul li {
+    width: 25%;
+    height: 65px;
+    padding-top: 25px;
+    vertical-align: top;
+    border-bottom: 2px solid #9f9f9f;
+  }
+  
+  .detailTab li.active {
+    border: 1px solid #111;
+    border-bottom: 2px solid #fff;
+  }
+  
+  .detailTab ul li:first-child {
+    border-left: 1px solid #fff !important;
+  }
+  
+  .detailTab ul li a {
+    color: #1a1a1a;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .detailTab ul li a span {
+    height: 20px;
+    padding: 0 5px;
+    margin-left: 5px;
+    color: #fff;
+    font-size: 11px;
+    line-height: 16px;
+    background-color: #9f9f9f;
+    border-radius: 3px;
+    vertical-align: middle;
+  }
+  

@@ -1,0 +1,494 @@
+.wishTop {
+    width: 1420px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.wishcategory {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.wishcategory ul {
+    display: flex;
+    align-items: center;
+}
+
+.wishcategory a {
+    font-size: 12px;
+    color: #7d7d7d;
+    margin-right: 5px;
+    font-weight: 400;
+}
+
+.wishcategory li {
+    font-size: 12px;
+    color: #000;
+    font-weight: bolder;
+}
+
+.wishTitle {
+    width: 100%;
+    height: 50px;
+    margin: 55px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wishTitle h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.wishStep {
+    width: 100%;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.wishStep ul {
+    display: flex;
+    align-items: center;
+}
+
+.wishStep li {
+    font-size: 14px;
+    color: #939393;
+}
+
+.wishStep li:first-child {
+    color: #1a1a1a;
+}
+
+.wishStep li:not(:last-child):after {
+    margin: -2px 30px 0;
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-left: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    transform: rotate(-135deg);
+
+}
+
+
+/* 장바구니상품 */
+.wishBody {
+    width: 1420px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.deliveryTap {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.deliveryTap ul {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #1a1a1a;
+    background-color: #fff;
+}
+
+.deliveryTap li {
+    padding: 20px 40px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #909090;
+}
+
+.deliveryTap li:first-child {
+    color: #1a1a1a;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #1a1a1a;
+    border-bottom: none;
+    z-index: 1;
+}
+
+.deliveryTap li:first-child::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.deliveryTap p {
+    position: absolute;
+    right: 0;
+    font-size: 13px;
+    color: #909090;
+}
+
+.cartContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartProduct {
+    width: 1000px;
+    height: auto;
+}
+
+.cartProduct h1 {
+    font-size: 16px;
+    padding: 20px 0 30px;
+    font-weight: bolder;
+}
+
+.productCount {
+    width: 100%;
+    height: 55px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.cartProductWrap {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+
+.cartProductBox{
+    width: 100%;
+    height: 480px;
+    margin-top: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.cartProductMain {
+    width: 100%;
+    height: 120px;
+}
+
+.check {
+    margin-right: 5px;
+    float: left;
+}
+
+input[type="checkbox"]:checked {
+    background: url("/public/img/main_page/icon/checkbox_on.svg")no-repeat center;
+    background-size: 24px 24px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d9d9d9;
+    background: url("/public/img/main_page/icon/checkbox_off.svg") no-repeat center;
+    background-size: 24px 24px;
+    cursor: pointer;
+}
+
+.cartProductMain img {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin-right: 10px;
+}
+
+.cartProductMain ul {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.cartProductMain li img {
+    float: none;
+    width: 53px;
+    height: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.cartProductMain ul a:hover {
+    color: #1a1a1a;
+}
+
+.cartProductMain li span {
+    color: #ef441f;
+}
+
+.colorGray {
+    color: #7d7d7d;
+}
+
+
+.cartProductOption {
+    width: 970px;
+    height: 50px;
+    margin: 35px 0 0 30px;
+    padding: 13px 16px 13px;
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.cartProductOption span {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.cartProductCount {
+    width: 970px;
+    height: 50px;
+    margin: 24px 0 24px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartProductCount span {
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.cartCountBtnBox {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.cartCountBtnBox > div {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.countUpDown {
+    padding: 16px 20px;
+    border: 1px solid #d9d9d9;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.cartCountBtnBox input {
+    font-size: 15px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.productDelete {
+    height: 50px;
+    font-size: 14px;
+    padding: 13px 30px;
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+}
+
+.productDelete:hover {
+    border: 1px solid #1a1a1a;
+}
+
+.cartProductPrice {
+    width: 970px;
+    height: 50px;
+    margin: 24px 0 24px 30px;
+    padding-top: 24px;
+    border-top: 1px solid #d6d6d6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartProductPrice span {
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+.cartProductPrice span strong {
+    font-weight: bolder;
+}
+
+.cartProductBtn {
+    width: 970px;
+    height: 50px;
+    margin: 24px 0 24px 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cartProductBtn div {
+    width: 49%;
+    height: 100%;
+    padding-top: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    cursor: pointer;
+}
+
+.cartProductBtn div:first-child:hover {
+    border: 1px solid #1a1a1a;
+}
+
+.cartProductBtn div:last-child {
+    background-color: #1a1a1a;
+    color:#fff;
+}
+
+.cartTotal {
+    width: 360px;
+    height: auto;
+}
+
+.cartTotal > div {
+    width: 360px;
+    height: 358px;
+}
+
+.totalSum {
+    width: 100%;
+    height: 216px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #1a1a1a;
+    padding: 30px 24px;
+}
+
+.totalSumPrice {
+    width: 310px;
+    height: 26px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalTitle {
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+.totalSumPrice div {
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+.totalSumPrice strong {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.totalSumDerivery {
+    width: 310px;
+    height: 26px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalSumDerivery div {
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+.totalSumRecipt {
+    width: 310px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #909090;
+    font-size: 16px;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+.totalSumRecipt span {
+    font-weight: 400;
+}
+
+.totalOrder {
+    width: 100%;
+    height: 56px;
+    background-color: #1a1a1a;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.checkOrder {
+    width: 100%;
+    height: 56px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #fff;
+    border: 1px solid #d6d6d6;
+    cursor: pointer;
+}
+
+.checkOrder:hover {
+    border: 1px solid #1a1a1a;
+}
+
+.wishBottom {
+    width: 1420px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.wishBottom h1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.wishBottom div {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e5e5e5;
+    border-top: 2px solid #1a1a1a;
+    font-size: 12px;
+    line-height: 21px;
+    color: #6d6d6d;    
+}
+
+.wishBottom div strong {
+    color: #000;
+    margin-bottom: 10px;
+}

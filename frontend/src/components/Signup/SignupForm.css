@@ -1,0 +1,166 @@
+/* 레이아웃 */
+.signupBox {
+  width: 1450px;
+  margin: 0 auto;
+}
+.signupCategory {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.signupCategory ul {
+  display: flex;
+  align-items: center;
+}
+.signupCategory a {
+  font-size: 15px;
+  color: #7d7d7d;
+  margin-right: 5px;
+  font-weight: 400;
+}
+.signupCategory li {
+  font-size: 15px;
+  color: #000;
+  font-weight: 700;
+}
+.signupTitle {
+  text-align: center;
+  margin: 60px 0 40px;
+  font-size: 32px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.signupForm {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto 100px;
+}
+
+/* 행(라벨/컨트롤 2단) */
+.row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+.row:first-of-type {
+  border-top: 2px solid #000;
+}
+.row .label {
+  padding: 20px 18px;
+  color: #1a1a1a;
+}
+.row .label .req {
+  color: #e65;
+  margin-right: 6px;
+}
+.row .control {
+  padding: 12px 0 12px 16px;
+}
+
+/* 필드(라벨+인풋 한 줄) */
+.field {
+  width: 560px;
+  height: 50px;
+  border: 1px solid #e3e3e3;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.field:hover,
+.field:focus-within {
+  border-color: #1a1a1a;
+}
+.field > span {
+  width: 90px;
+  color: #777;
+  font-size: 13px;
+  flex: 0 0 auto;
+}
+.field > input {
+  flex: 1 1 auto;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: transparent;
+  padding: 0;
+}
+
+/* 도움말 */
+.help {
+  font-size: 12px;
+  color: #8a8a8a;
+  margin-top: 6px;
+}
+
+/* 전화 입력 */
+.phoneGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.phoneSel {
+  width: 140px;
+  height: 50px;
+  border: 1px solid #e3e3e3;
+  background: #fff;
+  padding: 0 8px;
+  font-size: 14px;
+}
+.phoneInput {
+  width: 140px;
+  height: 50px;
+  border: 1px solid #e3e3e3;
+  padding: 0 12px;
+  font-size: 14px;
+}
+.phoneSel:focus,
+.phoneInput:focus {
+  outline: none;
+  border-color: #1a1a1a;
+}
+.dash {
+  color: #bbb;
+}
+
+/* 버튼들 */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #eee;
+}
+.btnLine {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 60px;
+  border: 1px solid #1a1a1a;
+  font-size: 16px;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 700;
+}
+.btnLine:hover {
+  color: #1a1a1a;
+}
+.submitBtn {
+  width: 360px;
+  height: 60px;
+  background: #1a1a1a;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}

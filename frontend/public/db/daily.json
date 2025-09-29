@@ -1,0 +1,4678 @@
+[
+    {
+        "id": "1",
+        "src": "img/main_page/dailyHighlights/daily1.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily1_2.jpg",
+        "title": "패스트 알 나이트로 엘리트 3(31206001)",
+        "price_origin": "",
+        "price": "379,000원",
+        "tag_black": "img/main_page/icon/black_tag_icon.jpg",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily1_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily1_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily1_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily1_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily1_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily1_6.jpg"
+                    }
+                ],
+                "brand": "Puma",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "31206001"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily1_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily1_9.jpeg",
+                "review_content": "오랜만에 감탄나오는 카본 레이싱화 입니다!",
+                "name": "이**",
+                "date": "04.27"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily1_10.jpg",
+                "review_content": "칼 배송! 디자인 굿! 내일 서하마 때 잘 착용하겠습니다",
+                "name": "김**",
+                "date": "04.26"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag" : "",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요🙂 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag" : "",
+                "newTag": "NEW",
+                "content": "디나엘3 이후 최고의 레이싱화",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "발볼이 살짝 타이트한감이있으나 가볍고 좋아요",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요😀 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "무난무난 하네요 감사합니다!",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "src": "img/main_page/dailyHighlights/daily2.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily2_2.jpg",
+        "title": "메타스피드 엣지 파리(1013A124400)",
+        "price_origin": "",
+        "price": "299,000원",
+        "tag_black": "",
+        "tag_red": "img/main_page/icon/red_tag_icon.gif",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily2_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily2_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily2_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily2_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily2_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily2_6.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "230"
+                    },
+                    {
+                        "option": "240"
+                    },
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "280"
+                    },
+                    {
+                        "option": "290"
+                    }
+                ],
+                "code": "1013A24400"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily2_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily2_8.jpg",
+                "review_content": "챌린지레이스 풀코스 즐겁게 달렸어요!",
+                "name": "성**",
+                "date": "03.05"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily2_9.jpeg",
+                "review_content": "235 사이즈 구하고 있었는데 온유어마크에서 딱... 완전 럭키",
+                "name": "서**",
+                "date": "02.12"
+            },{
+                "photo": "img/sub_page/Daily/daily2_10.jpg",
+                "review_content": "메타스카이 엣지 온유어마크에서 겟!! 너무 이쁘네여",
+                "name": "김**",
+                "date": "02.11"
+            },{
+                "photo": "img/sub_page/Daily/daily2_11.jpeg",
+                "review_content": "색깔이 너무 마음에 드네요👍👍👍",
+                "name": "임**",
+                "date": "02.05"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-17",
+                "monthTag" : "한달사용기",
+                "newTag": "",
+                "content": "잘 산 것 같아 기분이 좋아요 😍😍",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-03-13",
+                "monthTag" : "한달사용기",
+                "newTag": "NEW",
+                "content": "정말 뭐든걸 다 만족하는 신발이네요.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "천**",
+                "date" : "2025-03-13",
+                "monthTag" : "한달사용기",
+                "newTag": "NEW",
+                "content": "색상이 너무 이쁘게 나왔어요!!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "조**",
+                "date" : "2025-03-12",
+                "monthTag" : "한달사용기",
+                "newTag": "NEW",
+                "content": "메스엣 너무좋아요~~~~~!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "성**",
+                "date" : "2025-03-06",
+                "monthTag" : "한달사용기",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요🍀 감사합니다.",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "src": "img/main_page/dailyHighlights/daily3.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily3_2.jpg",
+        "title": "노바블라스트 5 LUXE W(1012B815020)",
+        "price_origin": "",
+        "price": "179,000원",
+        "tag_black": "",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily3_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily3_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily3_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily3_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily3_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily3_6.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "31206001"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily3_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily3_8.jpeg",
+                "review_content": "노바5 두번째 구매할정도로 만족도 최고네요",
+                "name": "윤**",
+                "date": "04.27"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily3_9.jpg",
+                "review_content": "노바 신고싶었는데 드디어 샀어요 좋아요",
+                "name": "김**",
+                "date": "04.26"
+            },{
+                "photo": "img/sub_page/Daily/daily3_10.jpeg",
+                "review_content": "좋습니다! 배송도 빠르고 만족합니다",
+                "name": "이**",
+                "date": "04.11"
+            },{
+                "photo": "img/sub_page/Daily/daily3_11.jpeg",
+                "review_content": "너무 이쁘고 살 수 있어서 너무 좋아요",
+                "name": "이**",
+                "date": "04.10"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요🍀 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "잘 산 것 같아 기분이 좋아요 🌈🌈",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "고**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.👍 감사합니다!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "15.9에 최고인가성비 데일리러닝화 탑",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족해요! 조깅화로 최고의 선택입니다 ㅎㅎㅎ",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "src": "img/main_page/dailyHighlights/daily4.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily4_2.jpg",
+        "title": "트라부코 맥스 4(1011B976400)",
+        "price_origin": "",
+        "price": "179,000원",
+        "tag_black": "",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily4_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily4_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily4_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily4_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily4_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily4_6.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "1011B976400"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily4_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily4_8.jpeg",
+                "review_content": "평소 신는 러닝화에서 반업했습니다. 안정적이고 좋아요",
+                "name": "이**",
+                "date": "04.30"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily4_9.jpeg",
+                "review_content": "제품은 당연히 좋고, 배송이 빠릅니다",
+                "name": "김**",
+                "date": "04.23"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-05-07",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": " 잘 산 것 같아 기분이 좋아요 🍀🍀",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😆 감사합니다!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "로켓배송이에요 ㅎㅎ",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요😀 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "무난무난 하네요 감사합니다!",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "src": "img/main_page/dailyHighlights/daily5.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily5_2.jpg",
+        "title": "메타스피드 스카이 파리(1013A123401)",
+        "price_origin": "",
+        "price": "299,000원",
+        "tag_black": "",
+        "tag_red": "img/main_page/icon/red_tag_icon.gif",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily5_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily5_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily5_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily5_4.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "31206001"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily5_5.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily5_6.jpeg",
+                "review_content": "너무 이뻐요",
+                "name": "이**",
+                "date": "04.27"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily5_7.jpg",
+                "review_content": "가볍고 탱탱합니다 잘신겠습니다!",
+                "name": "김**",
+                "date": "04.26"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily5_8.jpg",
+                "review_content": "컬러와 디자인이 예뻐서 만족스럽습니다",
+                "name": "김**",
+                "date": "04.26"
+            },{
+                "photo": "img/sub_page/Daily/daily5_9.jpeg",
+                "review_content": "제가 이 신발을 사게 되다니...",
+                "name": "이**",
+                "date": "04.27"
+            },{
+                "photo": "img/sub_page/Daily/daily5_10.jpeg",
+                "review_content": "온유어마크 덕분에 구입할 수 있었습니다. 굿!",
+                "name": "이**",
+                "date": "04.27"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"한달사용기",
+                "newTag": "",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😀 감사합니다!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": " 만족할 만큼 좋은 상품이에요🌈 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "",
+                "content": " 사이즈도 너무 좋고 마음에 들어요 다음에도 또구매하고 싶을 정도입니다 감사합니다",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "허**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😍 감사합니",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "배송 로켓배송수준입니다ㅋㅋ 상담도 너무 친절하시구요",
+                "reviewTag": [{
+                    "img": "img/main_page/icon/thumbs-up.png",
+                    "tagname": "핏이 좋아요"
+                },
+                {
+                    "img": "img/main_page/icon/sparkles.png",
+                    "tagname": "디자인이 예뻐요"
+                },
+                {
+                    "img": "img/main_page/icon/star-struck.png",
+                    "tagname": "퀄리티가 뛰어나요"
+                }]
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "src": "img/main_page/dailyHighlights/daily6.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily6_2.jpg",
+        "title": "아디제로 아디오스 프로 4 M(JR6368)",
+        "price_origin": "",
+        "price": "299,000원",
+        "tag_black": "",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily6_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily6_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily6_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily6_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily6_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily6_6.jpg"
+                    }
+                ],
+                "brand": "adidas",
+                "made": "중국",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "JR6368"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily6_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily6_8.jpeg",
+                "review_content": "가볍고 좋습니다 색감이 너무 이뻐서 못참고 구매했어요!!",
+                "name": "이**",
+                "date": "04.26"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily6_9.jpeg",
+                "review_content": "재구매입니다. 잘 뛰겠습니다.",
+                "name": "방**",
+                "date": "04.05"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily6_10.jpg",
+                "review_content": "프로3보다 확실히 쿠션감이 좋아졌네요",
+                "name": "정**",
+                "date": "04.06"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": " 잘 산 것 같아 기분이 좋아요 😃😃",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요🌈 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "",
+                "content": "가볍고 반발력이 좋습니다. 발볼러들은 최소 반업 추천요.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "",
+                "content": "디자인도 괜찮고 착용감도 좋지만 처음 카본화 신으면 적응하기힘듭니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "역시 아프... 너무 좋네요 신발이 너무 가볍고 편합니다",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },{
+                    "img": "img/main_page/icon/thumbs-up.png",
+                    "tagname": "핏이 좋아요"
+                },
+                {
+                    "img": "img/main_page/icon/sparkles.png",
+                    "tagname": "디자인이 예뻐요"
+                },
+                {
+                    "img": "img/main_page/icon/star-struck.png",
+                    "tagname": "퀄리티가 뛰어나요"
+                }]
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "src": "img/main_page/dailyHighlights/daily7.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily7_2.jpg",
+        "title": "패스트 알 나이트로 엘리트 3 W(31206101)",
+        "price_origin": "",
+        "price": "379,000원",
+        "tag_black": "",
+        "tag_red": "",
+        "tag_yellow": "img/main_page/icon/yellow_tag_icon.jpg",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily7_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily7_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily7_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily7_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily7_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily7_6.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "1013A142400"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily7_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily7_8.jpeg",
+                "review_content": "너무나도 가지고 싶었던 신발 드디어 득템! 감사합니다",
+                "name": "주**",
+                "date": "03.26"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily7_9.jpg",
+                "review_content": "명불허전 슈블2입니다 사진은 275사이즈와 비교",
+                "name": "정**",
+                "date": "03.19"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "**",
+                "date" : "2025-05-07",
+                "newTag": "NEW",
+                "content": "디자인, 컬러 너무 예쁘고 선착으로 드디어 구했다니 너무 좋네요! 사이즈가 사알짝 큰 느낌이 있습니다. 그만큼 여유롭다고 할까요..",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-05",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요👍 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "황**",
+                "date" : "2025-05-05",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요🌈 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-05-03",
+                "newTag": "NEW",
+                "content": "그렇게 구하기 힘들었는데 온유어마크에서 너무 잘 구매했습니다. 감사합니다",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "왕**",
+                "date" : "2025-04-30",
+                "newTag": "NEW",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😀 감사합니다!",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "src": "img/main_page/dailyHighlights/daily8.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily8_2.jpg",
+        "title": "슈퍼블라스트 2(1013A142300)",
+        "price_origin": "",
+        "price": "249,000원",
+        "tag_black": "img/main_page/icon/black_tag_icon.jpg",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily8_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily8_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily8_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily8_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily8_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily8_6.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "230"
+                    },
+                    {
+                        "option": "240"
+                    },
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "280"
+                    },
+                    {
+                        "option": "290"
+                    }
+                ],
+                "code": "31206001"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily8_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily8_8.jpeg",
+                "review_content": "편하고 좋네요 굿!",
+                "name": "임**",
+                "date": "03.19"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily8_9.jpeg",
+                "review_content": "구하기 어려운 신발 온유어마크에서 잘샀네요!",
+                "name": "이**",
+                "date": "03.19"
+            },{
+                "photo": "img/sub_page/Daily/daily8_10.jpg",
+                "review_content": "말해뭐하나요 슈블2는 최고트레이닝화 입니다",
+                "name": "이**",
+                "date": "03.19"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily8_11.jpg",
+                "review_content": "슈퍼블라스트2 강력추천!",
+                "name": "김**",
+                "date": "03.18"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-04-27",
+                "monthTag" : "한달사용기",
+                "newTag": "",
+                "content": "입고일에 구입성공해서 이후 대회 신고나가서 pb했어요. 호호호 . 속력을 냈을때 튕겨줘서 천천히 달릴때보다 더 편한것 같더라구요. ",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "양**",
+                "date" : "2025-04-15",
+                "monthTag" : "한달사용기",
+                "newTag": "",
+                "content": "사이즈도 너무 좋고 마음에 들어요 다음에도 또구매하고 싶을 정도입니다 감사합니다",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "유**",
+                "date" : "2025-04-15",
+                "monthTag" : "한달사용기",
+                "newTag": "",
+                "content": "신발 너무 편합니다 만족스러워서 한개더 구매하여 잘신고있습니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "정**",
+                "date" : "2025-04-08",
+                "monthTag":"",
+                "newTag": "",
+                "content": "진짜 배송 하루만에 오고 편안하고 퀄도 너무 좋아요!!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-03-26",
+                "monthTag":"",
+                "newTag": "",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😆 감사합니다!",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "src": "img/main_page/dailyHighlights/daily9.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily9_2.jpg",
+        "title": "아디제로 아디오스 프로 4 M 서울(JR4542)",
+        "price_origin": "",
+        "price": "299,000원",
+        "tag_black": "",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily9_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily9_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily9_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily9_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily9_5.jpg"
+                    }
+                ],
+                "brand": "adidas",
+                "made": "중국",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "JR4542"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily9_6.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily9_7.jpeg",
+                "review_content": "배송이 빠르고 실물이 더 예쁩니다.",
+                "name": "이**",
+                "date": "04.27"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "잘 산 것 같아 기분이 좋아요 😃😃",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요🌈 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": "가볍고 반발력이 좋습니다. 발볼러들은 최소 반업 추천요.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"한달사용기",
+                "newTag": "",
+                "content": " 만족할 만큼 좋은 상품이에요😍 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "역시 최고의 레이싱화입니다",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "src": "img/main_page/dailyHighlights/daily10.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily10_2.jpg",
+        "title": "MTL 어댑트 MATRYX(M25A1MLC314)",
+        "price_origin": "299,000원",
+        "price": "209,300원",
+        "tag_black": "",
+        "tag_red": "",
+        "tag_yellow": "img/main_page/icon/yellow_tag_icon.jpg",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily10_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily10_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily10_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily10_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily10_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily10_6.jpg"
+                    }
+                ],
+                "brand": "Merrell",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "M25A1MLC314"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily10_7.jpg",
+        "reviewPhoto": [],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요🙂 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "좋아요",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "발볼이 살짝 타이트한감이있으나 가볍고 좋아요",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요😀 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "무난무난 하네요 감사합니다!",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "11",
+        "src": "img/main_page/dailyHighlights/daily11.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily11_2.jpg",
+        "title": "클라우드 몬스터 2 M(3ME10121043)",
+        "price_origin": "",
+        "price": "219,000원",
+        "tag_black": "img/main_page/icon/black_tag_icon.jpg",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily11_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily11_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily11_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily11_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily11_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily11_6.jpg"
+                    }
+                ],
+                "brand": "On",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    },
+                    {
+                        "option": "285"
+                    }
+                ],
+                "code": "3ME10121043"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily11_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily11_8.jpg",
+                "review_content": "쿠셔닝이 푹신하면서도 탄탄해서 맘에 쏙 들어요",
+                "name": "이**",
+                "date": "04.27"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily11_9.jpg",
+                "review_content": "실물 굉장히 예뻐요 디테일이 살아있고 엄청 촘촘한 느낌입니다",
+                "name": "김**",
+                "date": "04.26"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "마침 제 사이즈 하나만 남아 있어서 구매했습니다. 발볼러인 저에게 딱 맞는 신발인것 같습니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": "슈퍼트레이너 러닝화로 부담없이 데일리 조깅이나 트레이닝에 신기에 모두 좋습니다",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😃 감사합니다!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "처음 사보는데 굉장히 편해서 놀랐어요.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "신발을 신는 순간 매우 편안하고 바닥 쿠션이 마음에 듭니다",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "12",
+        "src": "img/main_page/dailyHighlights/daily12.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily12_2.jpg",
+        "title": "에어로 매쉬 컴프레션 쇼츠(MA7374BBLKSRF)",
+        "price_origin": "",
+        "price": "129,000원",
+        "tag_black": "",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Tights",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily12_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily12_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily12_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily12_4.jpg"
+                    }
+                ],
+                "brand": "2XU",
+                "made": "방글라데시",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "090"
+                    },
+                    {
+                        "option": "095"
+                    },
+                    {
+                        "option": "100"
+                    },
+                    {
+                        "option": "105"
+                    }
+                ],
+                "code": "MA7374BBLKSRF"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily12_5.jpg",
+        "reviewPhoto": [],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "주머니 공간이 많아서 좋아요",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "최고",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "가볍고 좋아요",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요😀 감사합니다.",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "무난무난 하네요 감사합니다!",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "13",
+        "src": "img/main_page/dailyHighlights/daily13.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily13_2.jpg",
+        "title": "노바블라스트 5 ATC(1011C027400)",
+        "price_origin": "",
+        "price": "159,000원",
+        "tag_black": "img/main_page/icon/black_tag_icon.jpg",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily13_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily13_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily13_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily13_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily13_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily13_6.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    },
+                    {
+                        "option": "285"
+                    }
+                ],
+                "code": "1011C027400"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily13_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily13_8.jpg",
+                "review_content": "좋다는 추천을 많이 받아서 구입했는데 정말 만족합니다.",
+                "name": "이**",
+                "date": "04.23"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily13_9.jpg",
+                "review_content": "정말 최고입니다 역시 노바",
+                "name": "송**",
+                "date": "04.15"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요🍀 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "좋습니다! 배송도 빠르고 만족합니다",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족해요! 조깅화로 최고의 선택입니다 ㅎㅎㅎ",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요😍 감사합니다.",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "정사이즈 구매했는데 딱 좋습니다. 인기상품 빠르게 받아서 좋아요!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "14",
+        "src": "img/main_page/dailyHighlights/daily14.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily14_2.jpg",
+        "title": "노바블라스트 5(1011B974400)",
+        "price_origin": "",
+        "price": "159,000원",
+        "tag_black": "img/main_page/icon/black_tag_icon.jpg",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily14_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily14_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily14_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily14_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily14_5.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    },
+                    {
+                        "option": "285"
+                    },
+                    {
+                        "option": "290"
+                    }
+                ],
+                "code": "1011B974400"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily14_6.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily14_7.jpg",
+                "review_content": "착용감이 좋아서 데일리로 잘 신어볼 예정입니다.",
+                "name": "홍**",
+                "date": "02.11"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily14_8.jpeg",
+                "review_content": "노바4를 아주 잘 신고 있어서 노바5도 구매",
+                "name": "김**",
+                "date": "02.20"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily14_9.jpg",
+                "review_content": "너무 좋습니다. 미드솔이 살짝 단단하면서 탱탱한 느낌이에요",
+                "name": "이**",
+                "date": "02.10"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "와이프 선물로 구매했는데 매우 만족해하네요",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": "아식스 노바 처음 구매했는데 만족합니다",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "와 ... 이래서 노바노바노바 슈퍼노바 하는구나... 오늘 뛰어보니 쩜니다... 감사합니다!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "장**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "",
+                "content": "정사이즈 구매했는데 딱 좋습니다. 인기상품 빠르게 받아서 좋아요!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😍 감사합니다!",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "15",
+        "src": "img/main_page/dailyHighlights/daily15.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily15_2.jpg",
+        "title": "노바블라스트 5 LUXE(1011C031020)",
+        "price_origin": "",
+        "price": "179,000원",
+        "tag_black": "",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily3_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily3_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily3_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily3_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily3_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily3_6.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "1011C031020"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily3_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily3_8.jpeg",
+                "review_content": "노바5 두번째 구매할정도로 만족도 최고네요",
+                "name": "윤**",
+                "date": "04.27"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily3_9.jpg",
+                "review_content": "노바 신고싶었는데 드디어 샀어요 좋아요",
+                "name": "김**",
+                "date": "04.26"
+            },{
+                "photo": "img/sub_page/Daily/daily3_10.jpeg",
+                "review_content": "좋습니다! 배송도 빠르고 만족합니다",
+                "name": "이**",
+                "date": "04.11"
+            },{
+                "photo": "img/sub_page/Daily/daily3_11.jpeg",
+                "review_content": "너무 이쁘고 살 수 있어서 너무 좋아요",
+                "name": "이**",
+                "date": "04.10"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요🍀 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "잘 산 것 같아 기분이 좋아요 🌈🌈",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "고**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.👍 감사합니다!",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "15.9에 최고인가성비 데일리러닝화 탑",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족해요! 조깅화로 최고의 선택입니다 ㅎㅎㅎ",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "src": "img/main_page/dailyHighlights/daily16.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily16_2.jpg",
+        "title": "아디제로 Evo SL M(JR3420)",
+        "price_origin": "",
+        "price": "209,000원",
+        "tag_black": "",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily16_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily16_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily16_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily16_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily16_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily16_6.jpg"
+                    }
+                ],
+                "brand": "adidas",
+                "made": "중국",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    }
+                ],
+                "code": "JR3420"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily16_7.jpg",
+        "reviewPhoto": [],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "나**",
+                "date" : "2025-05-07",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요👍 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": "족할 만큼 좋은 상품이에요🌈 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "",
+                "content": "탱탱튀는 반발력 정말좋습니다",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star_empty.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"한달사용기",
+                "newTag": "",
+                "content": "미드솔이 정말 탱탱하고 좋습니다. 사이즈는 사람마다 다르겠지만 정사이즈로 갔더니 발가락이 닿아서 다소 불편한 감이 있었습니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😆 감사합니다!",
+                "reviewTag": []
+            }
+        ]
+    },
+    {
+        "id": "17",
+        "src": "img/main_page/dailyHighlights/daily17.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily17_2.jpg",
+        "title": "디비에이트 나이트로 엘리트 3(30980906)",
+        "price_origin": "",
+        "price": "289,000원",
+        "tag_black": "img/main_page/icon/black_tag_icon.jpg",
+        "tag_red": "img/main_page/icon/red_tag_icon.gif",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily17_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily17_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily17_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily17_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily17_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily17_6.jpg"
+                    }
+                ],
+                "brand": "Puma",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "255"
+                    },
+                    {
+                        "option": "260"
+                    },
+                    {
+                        "option": "265"
+                    },
+                    {
+                        "option": "270"
+                    },
+                    {
+                        "option": "275"
+                    },
+                    {
+                        "option": "280"
+                    },
+                    {
+                        "option": "285"
+                    },
+                    {
+                        "option": "290"
+                    }
+                ],
+                "code": "30980906"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily17_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily17_8.jpg",
+                "review_content": "만족할 만큼 좋은 상품이에요😆 감사합니다.",
+                "name": "신**",
+                "date": "04.25"
+            },
+            {
+                "photo": "img/sub_page/Daily/daily17_9.jpg",
+                "review_content": "배송빠르고 신발 너무 좋습니다! 모두 구매하세요",
+                "name": "조**",
+                "date": "04.09"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "권**",
+                "date" : "2025-05-07",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족할 만큼 좋은 상품이에요😆 감사합니다.",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "NEW",
+                "content": "대회용으로도 아주 좋어요! PB했어요",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😍 감사합니다!",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "",
+                "content": "만족할 만큼 좋은 상품이에요🌈 감사합니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "",
+                "content": "사진보다 실물이 최고입니다. 색이 사진으로는 표현이 안되내요",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "18",
+        "src": "img/main_page/dailyHighlights/daily13.jpg",
+        "src_hover": "img/main_page/dailyHighlights/daily13_2.jpg",
+        "title": "슈퍼블라스트 2(1013A142501)",
+        "price_origin": "",
+        "price": "249,000원",
+        "tag_black": "img/main_page/icon/black_tag_icon.jpg",
+        "tag_red": "",
+        "tag_yellow": "",
+        "category":"Shoes",
+        "detailTop": [
+            {
+                "product_main": "img/sub_page/Daily/daily18_1.jpg",
+                "product_small": [
+                    {
+                        "img": "img/sub_page/Daily/daily18_2.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily18_3.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily18_4.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily18_5.jpg"
+                    },
+                    {
+                        "img": "img/sub_page/Daily/daily18s_6.jpg"
+                    }
+                ],
+                "brand": "Asics",
+                "made": "베트남",
+                "warning": "제품 Tag 참조",
+                "size": [
+                    {
+                        "option": "230"
+                    },
+                    {
+                        "option": "235"
+                    },
+                    {
+                        "option": "240"
+                    },
+                    {
+                        "option": "245"
+                    },
+                    {
+                        "option": "250"
+                    },
+                    {
+                        "option": "255"
+                    }
+                ],
+                "code": "1013A142501"
+            }
+        ],
+        "detailInfo": "img/sub_page/Daily/daily18_7.jpg",
+        "reviewPhoto": [
+            {
+                "photo": "img/sub_page/Daily/daily18_8.jpg",
+                "review_content": "디자인, 컬러 너무 예쁘고 선착으로 드디어 구했다니 너무 좋네요!",
+                "name": "이**",
+                "date": "04.27"
+            }
+        ],
+        "reviewMainBody": [
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "이**",
+                "date" : "2025-05-07",
+                "monthTag":"한달사용기",
+                "newTag": "",
+                "content": "주 만족스럽습니다. 컬러가 고급스러워요.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "박**",
+                "date" : "2025-05-05",
+                "monthTag":"한달사용기",
+                "newTag": "",
+                "content": "신발 너무 편합니다 만족스러워서 한개더 구매하여 잘신고있습니다.",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "안**",
+                "date" : "2025-05-05",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "만족해요. 꽤 좋은 선택이었던 것 같아요.😍 감사합니다!",
+                "reviewTag": []
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "손**",
+                "date" : "2025-05-03",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "민트 컬러를 갖고 싶긴 했으나 급한 마음에 시멘트 구입. 하지만 실물은 너무나 이쁘지요! ",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    },
+                    {
+                        "img": "img/main_page/icon/smiling-face-with-smiling-eyes.pngg",
+                        "tagname": "사이즈가 적당해요"
+                    },{
+                        "img": "img/main_page/icon/smiling-face-with-heart-eyes.png",
+                        "tagname": "착용감이 편안해요"
+                    }
+                ]
+            },
+            {
+                "star": [
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    },
+                    {
+                        "img": "img/main_page/icon/star.webp"
+                    }
+                ],
+                "name" : "김**",
+                "date" : "2025-04-30",
+                "monthTag":"",
+                "newTag": "NEW",
+                "content": "그렇게 구하기 힘들었는데 온유어마크에서 너무 잘 구매했습니다. 감사합니다",
+                "reviewTag": [
+                    {
+                        "img": "img/main_page/icon/rocket.png",
+                        "tagname": "배송이 빨라요"
+                    },
+                    {
+                        "img": "img/main_page/icon/thumbs-up.png",
+                        "tagname": "핏이 좋아요"
+                    },
+                    {
+                        "img": "img/main_page/icon/sparkles.png",
+                        "tagname": "디자인이 예뻐요"
+                    },
+                    {
+                        "img": "img/main_page/icon/star-struck.png",
+                        "tagname": "퀄리티가 뛰어나요"
+                    }
+                ]
+            }
+        ]
+    }
+]
