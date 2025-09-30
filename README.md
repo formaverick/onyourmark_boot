@@ -15,13 +15,13 @@
 
 - [🎯 개발 포인트](#-개발-포인트)
 - [🛠️ 기술 스택](#️-기술-스택)
-- [🏛️ 시스템 아키텍처](#-시스템-아키텍처-system-architecture)
+- [🏛️ 시스템 아키텍처](#system-architecture)
 - [🌊 시퀀스 다이어그램](#-시퀀스-다이어그램-sequence-diagrams)
 - [🔗 ERD](#-erd)
 - [✨ 주요 기능](#-주요-기능)
 - [📝 API 명세](#-api-명세)
 - [🤯 트러블 슈팅](#-트러블-슈팅)
-- [🖼️ 결과 화면](#-결과-화면)
+- [🖼️ 결과 화면](#screenshots)
 - [📝 회고 & 배운 점](#-회고--배운-점)
 
 <br>
@@ -72,6 +72,7 @@
 
 <br>
 
+<a id="system-architecture"></a>
 ## 🏛️ 시스템 아키텍처 (System Architecture)
 
 ```mermaid
@@ -442,6 +443,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 
 <br>
 
+<a id="screenshots"></a>
 ## 🖼️ 결과 화면
 
 ### 회원가입 & 로그인
