@@ -322,14 +322,108 @@ public String uploadFile(String uploadPath, String originalFileName, byte[] file
 
 ### 1. 게시글 목록 조회 시 N+1 문제 발생
 
-- **문제 상황:** 게시글 목록을 조회할 때, 각 게시글의 작성자 정보를 가져오기 위해 루프마다 추가적인 쿼리가 발생하는 N+1 문제를 발견했습니다. `p6spy`를 통해 확인 결과, 1개의 목록 조회 쿼리와 20개의 사용자 조회 쿼리(총 21개)가 실행되고 있었습니다.
-- **해결 과정:** JPQL의 `JOIN FETCH`를 사용하여 게시글을 조회할 때 연관된 `User` 엔티티를 함께 가져오도록 수정했습니다. 이를 통해 즉시 로딩(Eager Loading)을 유도하여 단 한 번의 쿼리로 원하는 모든 데이터를 가져올 수 있었습니다.
-- **결과:** 총 21개였던 쿼리가 **단 1개**로 감소했으며, API 응답 속도가 **약 50% 향상** (250ms → 120ms)되었습니다.
+#### 👉 JPA Fetch 전략 최적화로 쿼리 성능 개선
+
+* **문제 상황**
+
+  * 게시글(BoardPost) 목록 조회 시, 작성자(User) 정보를 지연 로딩(LAZY)으로 가져오면서 불필요한 N개의 추가 쿼리가 발생하는 N+1 문제를 발견.
+  * 게시글 100개 조회 시 총 101번의 쿼리가 실행되어 성능 저하 발생.
+
+* **해결 과정**
+
+  * JPQL `JOIN FETCH`를 적용하여 `BoardPost`와 연관된 `User` 엔티티를 한 번의 쿼리로 조회하도록 리팩토링.
+  * 지연 로딩으로 인한 N+1 문제를 근본적으로 제거.
+
+* **결과**
+
+  * 101번 실행되던 쿼리를 1번으로 최적화, DB 부하를 크게 감소.
+  * API 평균 응답 속도가 **약 52% 개선 (250ms → 120ms)**.
+  * ORM Fetch 전략 및 성능 병목 구간 최적화 역량 확보.
 
 ```java
 // BoardRepository.java
 @Query("SELECT b FROM BoardPost b JOIN FETCH b.member ORDER BY b.createdAt DESC")
 List<BoardPost> findAllWithUser();
+```
+
+---
+
+### 2. 유사 리뷰 추천 기능의 비효율적인 아키텍처
+
+#### 👉 Native Query 기반으로 데이터 계층에서 직접 처리
+
+* **문제 상황**
+
+  * 리뷰 추천 로직이 AI 서버(Flask)에 과도하게 의존.
+  * 불필요한 API 호출 + 대량 데이터 전송으로 네트워크 지연 및 메모리 부하 발생.
+
+* **해결 과정**
+
+  * 추천 로직(유사도 계산 + 정렬 + 개수 제한)을 DB Native Query로 재구현.
+  * 모든 연산을 DB에서 처리하고, 애플리케이션은 최종 결과만 수신하도록 아키텍처 개선.
+
+* **결과**
+
+  * 불필요한 외부 API 호출 제거 → AI 서버 장애/지연의 영향 최소화.
+  * 복잡한 연산을 DB로 위임하여 서버 자원(CPU·메모리) 최적화.
+  * 책임과 역할을 계층별로 분리, 안정성과 성능 모두 개선.
+  * 시스템의 비효율을 아키텍처 관점에서 진단하고, 책임과 역할의 재분배를 통해 성능을 개선하는 역량 확보
+
+```java
+// ReviewRepository.java
+@Query(value = "SELECT * FROM review r " +
+               "WHERE r.review_id != :reviewId AND ABS(r.sentiment - :sentiment) <= 1 " +
+               "ORDER BY ABS(r.sentiment - :sentiment) ASC, r.created_at DESC " +
+               "LIMIT 5", nativeQuery = true)
+List<Review> findSimilarReviews(@Param("sentiment") int sentiment,
+                                @Param("reviewId") Long reviewId);
+```
+
+---
+
+### 3. Spring Security 인증/인가 문제
+
+#### 👉 FilterChain 재구성과 권한(Role) 매핑 수정
+
+* **문제 상황**
+
+  * JWT 토큰이 정상 발급되었음에도 일부 API 요청에서 `403 Forbidden` 발생.
+  * 사용자 권한(Role)에 따른 접근 제어가 기대와 다르게 동작.
+
+* **해결 과정**
+
+  * `JwtAuthFilter`를 `UsernamePasswordAuthenticationFilter` 앞에 등록하여 토큰 검증 순서 보장.
+  * `requestMatchers()`로 엔드포인트별 권한을 명확히 재정의.
+
+* **결과**
+
+  * 인증/인가 로직이 정상적으로 동작하며, 역할(Role) 기반 접근 제어 확립.
+  * Spring Security FilterChain의 실행 순서와 커스터마이징 방법에 대한 깊은 이해 확보.
+
+```java
+@Bean
+public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+    http.csrf(csrf -> csrf.disable())
+        .cors(cors -> {})
+        .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+        .authorizeHttpRequests(auth -> auth
+            // 공용 API
+            .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
+            .requestMatchers("/api/auth/**", "/api/board/**", "/api/reposts/**", "/api/review/**", "/img/**").permitAll()
+            .requestMatchers(HttpMethod.GET, "/api/notices/**").permitAll()
+
+            // 인증 필요 API
+            .requestMatchers("/api/notices/**", "/api/members/**").authenticated()
+
+            // 관리자 전용 API
+            .requestMatchers("/api/admin/**").hasRole("ADMIN")
+
+            // 그 외 요청
+            .anyRequest().authenticated())
+        .addFilterBefore(jwtAuthFilter(), UsernamePasswordAuthenticationFilter.class);
+
+    return http.build();
+}
 ```
 
 <br>
