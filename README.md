@@ -207,6 +207,8 @@ protected void doFilterInternal(HttpServletRequest request, HttpServletResponse 
 }
 ```
 
+<br>
+
 ### 2. AI 감성 분석 기반 리뷰 (Hugging Face 연동)
 
 - 사용자가 리뷰를 작성하면, 백엔드에서 Python(Flask)으로 구현된 AI 서버에 API 요청을 보내 리뷰 텍스트의 감성을 분석합니다.
@@ -229,6 +231,8 @@ private int analyzeSentiment(String content) {
     }
 }
 ```
+
+<br>
 
 ### 3. 복합 비즈니스 로직을 처리하는 게시판
 
@@ -257,6 +261,8 @@ public Long create(BoardPostCreateRequest request, String userid) {
     return boardRepository.save(b.build()).getId();
 }
 ```
+
+<br>
 
 ### 4. 안정적인 파일 업로드
 
