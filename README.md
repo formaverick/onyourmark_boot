@@ -1,4 +1,4 @@
-# On Your Mark - 커뮤니티 플랫폼
+# On Your Mark
 
 <br>
 
@@ -171,7 +171,7 @@ sequenceDiagram
 
 ## 🔗 ERD
 
-<img width="600" height="710" alt="ERD diagram" src="https://github.com/user-attachments/assets/b4e1ec53-3b9a-43b2-819f-d74a4e2ed599" />
+<p align="center"><img width="600" height="710" alt="ERD diagram" src="https://github.com/user-attachments/assets/b4e1ec53-3b9a-43b2-819f-d74a4e2ed599" /></p>
 
 
 <br>
