@@ -442,7 +442,7 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 
 <br>
 
-## 🖼️ 결과 화면 {#Screenshots}
+## 🖼️ 결과 화면
 
 ### 회원가입 & 로그인
 
