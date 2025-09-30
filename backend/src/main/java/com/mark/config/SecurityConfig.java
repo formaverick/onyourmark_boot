@@ -37,22 +37,24 @@ public class SecurityConfig {
                 .cors(cors -> {})
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
+                        // 공용 API
                         .requestMatchers(HttpMethod.OPTIONS, "/**").permitAll()
-                        .requestMatchers("/api/reposts/**").permitAll()
-                        .requestMatchers("/api/auth/**").permitAll()
-                        .requestMatchers("/api/board/**").permitAll()
+                        .requestMatchers("/api/auth/**", "/api/board/**", "/api/reposts/**", "/api/review/**", "/img/**").permitAll()
                         .requestMatchers(HttpMethod.GET, "/api/notices/**").permitAll()
-                        .requestMatchers("/img/**").permitAll()
-                        .requestMatchers("/api/review/**").permitAll()
-                        .requestMatchers(HttpMethod.POST, "/api/notices/**").authenticated()
-                        .requestMatchers(HttpMethod.PUT, "/api/notices/**").authenticated()
-                        .requestMatchers(HttpMethod.DELETE, "/api/notices/**").authenticated()
-                        .requestMatchers("/api/members/**").authenticated()
+
+                        // 인증 필요 API
+                        .requestMatchers("/api/notices/**", "/api/members/**").authenticated()
+
+                        // 관리자 전용 API
+                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
+
+                        // 그 외 요청
                         .anyRequest().authenticated())
                 .addFilterBefore(jwtAuthFilter(), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }
+
 
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
