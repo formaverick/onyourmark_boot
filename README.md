@@ -342,6 +342,7 @@ List<BoardPost> findAllWithUser();
 - **로그인** : 입력 → 완료 알림  
 - **회원정보 수정** : 비밀번호 확인 → 수정 페이지
 
+<p align="center"><video src"./video/Member.mp4 controls></video></p>
 
 <img width="45%" alt="회원가입 - 입력완료" src="https://github.com/user-attachments/assets/e845bf2a-cc45-4d2e-8256-a882ff6eed7e" />
 <img width="45%" alt="회원정보수정 - 비밀번호 확인" src="https://github.com/user-attachments/assets/5a29246e-2feb-4d95-b471-ffb0c97c6425" />
