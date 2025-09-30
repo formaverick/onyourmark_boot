@@ -58,6 +58,8 @@
 
 <br>
 
+<div align="center">
+
 | 구분         | 기술                                                          |
 | ------------ | ------------------------------------------------------------- |
 | **Frontend** | React, Axios, React-Router, Redux Toolkit                     |
@@ -65,6 +67,8 @@
 | **Database** | MySQL                                                         |
 | **AI (ML)**  | Python, Flask, Hugging Face Transformers                      |
 | **DevOps**   | Git                                                           |
+
+</div>
 
 <br>
 
@@ -310,6 +314,8 @@ public String uploadFile(String uploadPath, String originalFileName, byte[] file
 
 👉 전체 API 문서는 [Postman Docs](https://documenter.getpostman.com/view/48241033/2sB3QFPrEj) 에서 확인할 수 있습니다.
 
+<div align="center">
+
 | 구분       | 메서드 | 엔드포인트          | 설명                      |
 | ---------- | ------ | ------------------- | ------------------------- |
 | Auth       | POST   | /api/auth/login     | 로그인 (JWT 발급)         |
@@ -322,6 +328,7 @@ public String uploadFile(String uploadPath, String originalFileName, byte[] file
 | Notices    | DELETE | /api/notices/{id}   | 공지사항 삭제 (관리자)    |
 | Review     | POST   | /api/review         | 리뷰 작성 (이미지 업로드) |
 
+</div>
 
 <br>
 
@@ -435,43 +442,50 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 
 <br>
 
-## 🖼️ 결과 화면
+## 🖼️ 결과 화면 {#Screenshots}
 
 ### 회원가입 & 로그인
 
-- **회원가입** : 입력 → 완료 페이지  
-- **로그인** : 입력 → 완료 알림  
-- **회원정보 수정** : 비밀번호 확인 → 수정 페이지
-
 https://github.com/user-attachments/assets/005a20c5-653e-499a-b300-615a61b077fd
+
+<div align="center">
+
+| 기능 | 설명 | 화면 |
+|------|------|------|
+| 회원가입 | 사용자 정보 입력 후 가입 완료 | <img width="250" src="https://github.com/user-attachments/assets/e845bf2a-cc45-4d2e-8256-a882ff6eed7e" /> |
+| 로그인 | 아이디/비밀번호 입력 후 로그인 성공 알림 | <img width="250" src="https://github.com/user-attachments/assets/559e0871-cf4a-4338-b37f-8c60fbb5d539" /> |
+| 회원정보 수정 | 비밀번호 확인 후 수정 가능 | <img width="250" src="https://github.com/user-attachments/assets/5a29246e-2feb-4d95-b471-ffb0c97c6425" /> |
+
+</div>
 
 <br>
 
-<img width="45%" alt="회원가입 - 입력완료" src="https://github.com/user-attachments/assets/e845bf2a-cc45-4d2e-8256-a882ff6eed7e" />
-<img width="45%" alt="회원정보수정 - 비밀번호 확인" src="https://github.com/user-attachments/assets/5a29246e-2feb-4d95-b471-ffb0c97c6425" />
+<details> 
+<summary>📂 전체 화면 더보기</summary>
 
-<details> <summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="회원가입완료페이지" src="https://github.com/user-attachments/assets/1b426227-7996-40bf-a6b9-9b5d1453e711" />
-<img width="45%" alt="로그인 - 입력전" src="https://github.com/user-attachments/assets/559e0871-cf4a-4338-b37f-8c60fbb5d539" />
 <img width="45%" alt="로그인 완료 알림" src="https://github.com/user-attachments/assets/0a94fc19-34cc-4db0-9f33-6d985b4dae58" />
 <img width="45%" alt="회원정보수정 - 페이지" src="https://github.com/user-attachments/assets/6ed8d9a7-1cf7-4b81-a033-0ddcc4d72c98" />
+
 </details>
 
 <br>
 
 ### 리뷰 작성 + AI 감성 분석 결과
 
-- 리뷰 작성 클릭 → 로그인 필요 알림 → 리뷰 작성 → 등록 완료  
-- 등록 후 상세 페이지 (삭제 버튼은 로그인 시 작성자일 경우 노출)  
-- 삭제 시 확인/완료 알림창
-
-
 https://github.com/user-attachments/assets/7cff6deb-b71f-4440-ab76-a543d5d1e846
 
-<br>
+<div align="center">
 
-<img width="45%" alt="리뷰 - 작성페이지" src="https://github.com/user-attachments/assets/79bd857e-56e3-4971-946f-8ac12ddfb11f" />
-<img width="45%" alt="리뷰 - 상세페이지" src="https://github.com/user-attachments/assets/97737fdc-c9df-4fe7-a12d-3fa9bb49c3b9" />
+| 기능 | 설명 | 화면 |
+|------|------|------|
+| 리뷰 작성 | 로그인 필요 알림 후 작성 가능 | <img width="250" src="https://github.com/user-attachments/assets/79bd857e-56e3-4971-946f-8ac12ddfb11f" /> |
+| 리뷰 상세 | 감성 분석 결과와 함께 리뷰 상세 표시 | <img width="250" src="https://github.com/user-attachments/assets/97737fdc-c9df-4fe7-a12d-3fa9bb49c3b9" /> |
+| 리뷰 삭제 | 작성자 로그인 시 삭제 가능 | <img width="250" src="https://github.com/user-attachments/assets/03369202-cfb4-4a9c-8998-bd4b24b01358" /> |
+
+</div>
+
+<br>
 
 <details> <summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="리뷰 - 리스트페이지" src="https://github.com/user-attachments/assets/b8d36d8c-a595-4c2d-b002-0aa259361e4a" />
@@ -479,32 +493,32 @@ https://github.com/user-attachments/assets/7cff6deb-b71f-4440-ab76-a543d5d1e846
 <img width="45%" alt="리뷰 - 작성(로그인필요알림)" src="https://github.com/user-attachments/assets/562bea68-eb57-43af-bf40-9692d75e172d" />
 <img width="45%" alt="리뷰 - 등록 완료 상세 페이지 ( 로그인 시 삭제 버튼 노출 )" src="https://github.com/user-attachments/assets/c481cfc1-8d0d-435d-802e-f45841dea07a" />
 <img width="45%" alt="리뷰 - 삭제 확인 알림창" src="https://github.com/user-attachments/assets/daf02093-1cfe-450a-abff-9f231a9a1982" />
-<img width="45%" alt="리뷰 - 삭제 완료 알림창" src="https://github.com/user-attachments/assets/03369202-cfb4-4a9c-8998-bd4b24b01358" />
 </details>
 
 <br>
 
 ### Q&A 게시판 & 관리자 답변
 
-- 사용자 문의 작성 (회원/비회원) → 상세 조회 → (비공개글) 비밀번호 확인 필요 / (관리자) 비공개글 관계없이 조회 가능  
-- 마이페이지 → 내 문의 내역 확인 → 상세 조회  
-- 관리자 답변 등록 → 수정
-
-
 https://github.com/user-attachments/assets/ca8a06f3-3e3c-4c18-b290-5cb2f1c1267c
 
 https://github.com/user-attachments/assets/00a4aa2b-4adb-484c-bc8a-195c9c102d4d
 
-<br>
+<div align="center">
 
-<img width="45%" alt="Q A - 문의 작성(비회원)" src="https://github.com/user-attachments/assets/b46cede5-5fe0-43cf-b2ec-90385a9c77da" />
-<img width="45%" alt="Q A - (관리자)문의 상세페이지 답변 확인" src="https://github.com/user-attachments/assets/fff50eeb-c41f-4cc2-bda0-cda91ed8f284" />
+| 기능 | 설명 | 화면 |
+|------|------|------|
+| 문의 작성 | 회원/비회원 모두 작성 가능 (비공개글 지원) | <img width="250" src="https://github.com/user-attachments/assets/b46cede5-5fe0-43cf-b2ec-90385a9c77da" /> |
+| 문의 상세 | 회원은 본인 글만, 비공개글 비밀번호 입력 필요, 관리자는 전체 열람 가능 | <img width="250" src="https://github.com/user-attachments/assets/6b8a928b-fc4e-49c7-97ac-9dbdaf169ce2" /> |
+| 관리자 답변 | 관리자 계정으로 답변 등록/수정 | <img width="250" src="https://github.com/user-attachments/assets/fff50eeb-c41f-4cc2-bda0-cda91ed8f284" /> |
+
+</div>
+
+<br>
 
 <details> <summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="Q A - 리스트" src="https://github.com/user-attachments/assets/8d930b1d-d466-4ce3-9b3c-1b08c69dabb6" />
 <img width="45%" alt="Q A - 문의 작성(회원)" src="https://github.com/user-attachments/assets/054193a8-6b4c-4cae-90a4-dfa2abd8e582" />
 <img width="45%" alt="Q A - (회원)내문의내역 확인" src="https://github.com/user-attachments/assets/bd916321-aa72-4c86-a7e6-587b23888bae" />
-<img width="45%" alt="Q A - 문의 작성(비회원)" src="https://github.com/user-attachments/assets/b46cede5-5fe0-43cf-b2ec-90385a9c77da" />
 <img width="45%" alt="Q A - 비공개 글 비밀번호 확인" src="https://github.com/user-attachments/assets/b577b90f-a807-4619-80e3-59dcb824d082" />
 <img width="45%" alt="Q A - 문의 상세 조회" src="https://github.com/user-attachments/assets/6b8a928b-fc4e-49c7-97ac-9dbdaf169ce2" />
 <img width="45%" alt="Q A - 문의 상세 조회 (비밀번호 불일치)" src="https://github.com/user-attachments/assets/2bc04911-050e-4b3d-ac2c-5ec47f45c8b6" />
@@ -520,23 +534,25 @@ https://github.com/user-attachments/assets/00a4aa2b-4adb-484c-bc8a-195c9c102d4d
 
 ### 공지사항 (관리자 전용 CRUD)
 
-- (관리자) 공지사항 등록 → 상세 페이지 → 수정 → 삭제
-- (사용자) 공지사항 조회만 가능
-
-
 https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
+
+<div align="center">
+
+| 기능 | 설명 | 화면 |
+|------|------|------|
+| 공지 등록 | 관리자만 공지 작성 가능 | <img width="250" src="https://github.com/user-attachments/assets/6c0e647e-4b0d-4756-8b44-05ee50db9c09" /> |
+| 공지 상세 | 사용자 누구나 열람 가능 | <img width="250" src="https://github.com/user-attachments/assets/fec73c6a-d364-4fa6-b0c5-671c59987530" /> |
+| 공지 수정/삭제 | 관리자 권한 확인 후 수정 및 삭제 가능 | <img width="250" src="https://github.com/user-attachments/assets/66877d4a-49b7-4d4a-b875-ff5e20afe816" /> |
+
+</div>
 
 <br>
 
-<img width="45%" alt="캘린더 - (관리자) 등록하기 버튼 노출" src="https://github.com/user-attachments/assets/6c0e647e-4b0d-4756-8b44-05ee50db9c09" />
-<img width="45%" alt="캘린더 - 등록 페이지" src="https://github.com/user-attachments/assets/5c91d1fc-f31a-4fc9-b69f-ee2062612a91" />
-
 <details> <summary>📂 전체 화면 더보기</summary>
+<img width="45%" alt="캘린더 - 등록 페이지" src="https://github.com/user-attachments/assets/5c91d1fc-f31a-4fc9-b69f-ee2062612a91" />
 <img width="45%" alt="캘린더 - 리스트" src="https://github.com/user-attachments/assets/eef3cd5d-ef63-43e5-97db-09a4e31b49e1" />
-<img width="45%" alt="캘린더 - 상세페이지(상단)" src="https://github.com/user-attachments/assets/fec73c6a-d364-4fa6-b0c5-671c59987530" />
 <img width="45%" alt="캘린더 - 상세페이지(하단)" src="https://github.com/user-attachments/assets/e5643603-e303-410e-941a-5a10ad9c83d1" />
 <img width="45%" alt="캘린더 - 상세페이지(하단, 관리자 외)" src="https://github.com/user-attachments/assets/f7954439-d9f0-4536-afd2-e60e8526c1b3" />
-<img width="45%" alt="캘린더 - 수정페이지" src="https://github.com/user-attachments/assets/66877d4a-49b7-4d4a-b875-ff5e20afe816" />
 <img width="45%" alt="캘린더 - 수정 완료 페이지" src="https://github.com/user-attachments/assets/8b161c6a-c1b8-47ab-b080-256ca690478f" />
 </details>
 
