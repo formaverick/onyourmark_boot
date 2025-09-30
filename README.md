@@ -342,6 +342,10 @@ List<BoardPost> findAllWithUser();
 - **로그인** : 입력 → 완료 알림  
 - **회원정보 수정** : 비밀번호 확인 → 수정 페이지
 
+https://github.com/user-attachments/assets/005a20c5-653e-499a-b300-615a61b077fd
+
+<br>
+
 <img width="45%" alt="회원가입 - 입력완료" src="https://github.com/user-attachments/assets/e845bf2a-cc45-4d2e-8256-a882ff6eed7e" />
 <img width="45%" alt="회원정보수정 - 비밀번호 확인" src="https://github.com/user-attachments/assets/5a29246e-2feb-4d95-b471-ffb0c97c6425" />
 
@@ -359,6 +363,11 @@ List<BoardPost> findAllWithUser();
 - 리뷰 작성 클릭 → 로그인 필요 알림 → 리뷰 작성 → 등록 완료  
 - 등록 후 상세 페이지 (삭제 버튼은 로그인 시 작성자일 경우 노출)  
 - 삭제 시 확인/완료 알림창
+
+
+https://github.com/user-attachments/assets/7cff6deb-b71f-4440-ab76-a543d5d1e846
+
+<br>
 
 <img width="45%" alt="리뷰 - 작성페이지" src="https://github.com/user-attachments/assets/79bd857e-56e3-4971-946f-8ac12ddfb11f" />
 <img width="45%" alt="리뷰 - 상세페이지" src="https://github.com/user-attachments/assets/97737fdc-c9df-4fe7-a12d-3fa9bb49c3b9" />
@@ -379,6 +388,13 @@ List<BoardPost> findAllWithUser();
 - 사용자 문의 작성 (회원/비회원) → 상세 조회 → (비공개글) 비밀번호 확인 필요 / (관리자) 비공개글 관계없이 조회 가능  
 - 마이페이지 → 내 문의 내역 확인 → 상세 조회  
 - 관리자 답변 등록 → 수정
+
+
+https://github.com/user-attachments/assets/ca8a06f3-3e3c-4c18-b290-5cb2f1c1267c
+
+https://github.com/user-attachments/assets/00a4aa2b-4adb-484c-bc8a-195c9c102d4d
+
+<br>
 
 <img width="45%" alt="Q A - 문의 작성(비회원)" src="https://github.com/user-attachments/assets/b46cede5-5fe0-43cf-b2ec-90385a9c77da" />
 <img width="45%" alt="Q A - (관리자)문의 상세페이지 답변 확인" src="https://github.com/user-attachments/assets/fff50eeb-c41f-4cc2-bda0-cda91ed8f284" />
@@ -406,6 +422,11 @@ List<BoardPost> findAllWithUser();
 - (관리자) 공지사항 등록 → 상세 페이지 → 수정 → 삭제
 - (사용자) 공지사항 조회만 가능
 
+
+https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
+
+<br>
+
 <img width="45%" alt="캘린더 - (관리자) 등록하기 버튼 노출" src="https://github.com/user-attachments/assets/6c0e647e-4b0d-4756-8b44-05ee50db9c09" />
 <img width="45%" alt="캘린더 - 등록 페이지" src="https://github.com/user-attachments/assets/5c91d1fc-f31a-4fc9-b69f-ee2062612a91" />
 
@@ -422,15 +443,22 @@ List<BoardPost> findAllWithUser();
 
 ## 📝 회고 & 배운 점
 
-### 배운 점
+### 📚 배운 점
 
-- JWT 인증/인가와 Spring Security FilterChain 동작 원리를 실제로 이해하고 적용.
+- JWT 인증/인가와 Spring Security FilterChain 동작 원리를 이해하고 적용.
+    - `JwtAuthFilter`를 직접 구현하여 토큰 검증 → SecurityContext 반영 → 권한(Role) 기반 접근 제어 흐름을 이해 및 적용.
+    - 보안 아키텍처의 핵심 원리를 실습하며 Spring Security 구조에 대한 이해도 강화.
 
 - 마이크로서비스 연동을 통해 독립 배포 가능한 AI 기능 구현 경험 확보.
+  - Flask 기반 AI 감성 분석 서비스를 별도 서버로 구축 후 `Spring Boot`와 `REST API`로 연동.
+  - 독립 배포 및 확장이 가능한 구조를 경험하며 MSA 아키텍처의 장점 체득.
 
-- ERD → JPA 매핑 → N+1 트러블슈팅 과정을 통해 ORM 이해도 심화.
+- ERD → JPA 매핑 및 N+1 문제 해결
+  - 연관관계 매핑, 즉시/지연 로딩 전략, fetch join, EntityGraph를 적용하며 ORM 최적화 경험.
+  - N+1 문제를 직접 마주하고 해결하며 `데이터 접근 최적화` 역량 강화.
 
-- Postman을 활용한 API 문서화와 공유까지 협업 친화적 문서 작성법 학습.
+- Postman을 활용한 `API 문서화`와 공유까지 협업 친화적 문서 작성법 학습.
+  - Postman 컬렉션 공유 및 자동 문서화 기능을 활용해 실시간 업데이트 가능한 API 레퍼런스 구축.
 
 ### 개선할 점
 
