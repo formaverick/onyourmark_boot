@@ -189,25 +189,32 @@ sequenceDiagram
 ```java
 // JwtAuthFilter.java
 @Override
-protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
-    String token = jwtUtil.resolveToken(request);
+    protected void doFilterInternal(HttpServletRequest request,
+                                    HttpServletResponse response,
+                                    FilterChain filterChain) throws ServletException, IOException {
+        String token = jwtUtil.resolveToken(request);
 
-    if(token != null && jwtUtil.validateToken(token)){
-        String userid = jwtUtil.getUseridFromToken(token);
-        String role = jwtUtil.getRoleFromToken(token);
+        if(token != null && jwtUtil.validateToken(token)){
+            String userid = jwtUtil.getUseridFromToken(token);
+            String role = jwtUtil.getRoleFromToken(token);
 
-        List<GrantedAuthority> authorities = (role != null && !role.isBlank())
-                ? List.of(new SimpleGrantedAuthority("ROLE_" + role))
-                : List.of();
+            List<GrantedAuthority> authorities
+                    = (role != null && !role.isBlank())
+                    ? List.of(new SimpleGrantedAuthority("ROLE_" + role))
+                    : List.of();
 
-        UsernamePasswordAuthenticationToken authentication =
-                new UsernamePasswordAuthenticationToken(userid, null, authorities);
+            System.out.println("Authorities set: " + authorities);
 
-        SecurityContextHolder.getContext().setAuthentication(authentication);
+            UsernamePasswordAuthenticationToken authentication =
+                    new UsernamePasswordAuthenticationToken(userid, null, authorities);
+
+            authentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+
+            SecurityContextHolder.getContext().setAuthentication(authentication);
+        }
+
+        filterChain.doFilter(request, response);
     }
-
-    filterChain.doFilter(request, response);
-}
 ```
 
 <br>
