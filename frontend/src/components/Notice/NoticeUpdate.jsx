@@ -76,7 +76,7 @@ export default function NoticeUpdate() {
 
   return (
     <section className="notice-create">
-      <h1 className="notice-create-title">공지 수정</h1>
+      <h1 className="notice-create-title">Launching Calendar 수정</h1>
 
       <form onSubmit={handleSubmit} className="notice-form">
         <div className="form-group">
