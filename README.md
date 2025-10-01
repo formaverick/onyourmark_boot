@@ -560,6 +560,8 @@ https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
 
 <br>
 
+## 📝 회고
+
 ### 📚 프로젝트 성과
 
 - JWT 인증/인가와 Spring Security FilterChain 동작 원리를 이해하고 적용.
@@ -569,6 +571,10 @@ https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
 - 마이크로서비스 연동을 통해 독립 배포 가능한 AI 기능 구현 경험 확보.
   - Flask 기반 AI 감성 분석 서비스를 별도 서버로 구축 후 `Spring Boot`와 `REST API`로 연동.
   - 독립 배포 및 확장이 가능한 구조를 경험하며 MSA 아키텍처의 장점 체득.
+
+- DB 설계 및 정규화 경험
+  - 사용자, 게시판, 리뷰, 공지 등 실제 서비스 요구사항을 반영한 테이블과 관계를 설계.
+  - 외래키 제약조건과 ENUM 타입을 활용해 데이터 무결성과 일관성을 보장하며 ERD 기반 모델링 능력 강화.
 
 - ERD → JPA 매핑 및 N+1 문제 해결
   - 연관관계 매핑, 즉시/지연 로딩 전략, fetch join, EntityGraph를 적용하며 ORM 최적화 경험.
