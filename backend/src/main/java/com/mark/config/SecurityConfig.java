@@ -45,9 +45,6 @@ public class SecurityConfig {
                         // 인증 필요 API
                         .requestMatchers("/api/notices/**", "/api/members/**").authenticated()
 
-                        // 관리자 전용 API
-                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
-
                         // 그 외 요청
                         .anyRequest().authenticated())
                 .addFilterBefore(jwtAuthFilter(), UsernamePasswordAuthenticationFilter.class);

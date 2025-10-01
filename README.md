@@ -8,21 +8,20 @@
 
 <p align="center"><img width="621" height="748" alt="main" src="https://github.com/user-attachments/assets/f15068b4-3033-4b5e-b18e-a05dd0ff15f6" /></p>
 
-
 <br>
 
 ## 📑 목차 (Table of Contents)
 
 - [🎯 개발 포인트](#-개발-포인트)
 - [🛠️ 기술 스택](#️-기술-스택)
-- [🏛️ 시스템 아키텍처](#-시스템-아키텍처-system-architecture)
+- [🏛️ 시스템 아키텍처](#system-architecture)
 - [🌊 시퀀스 다이어그램](#-시퀀스-다이어그램-sequence-diagrams)
 - [🔗 ERD](#-erd)
 - [✨ 주요 기능](#-주요-기능)
 - [📝 API 명세](#-api-명세)
 - [🤯 트러블 슈팅](#-트러블-슈팅)
-- [🖼️ 결과 화면](#-결과-화면)
-- [📝 회고 & 배운 점](#-회고--배운-점)
+- [🖼️ 결과 화면](#screenshots)
+- [📝 회고](#-회고)
 
 <br>
 
@@ -58,6 +57,8 @@
 
 <br>
 
+<div align="center">
+
 | 구분         | 기술                                                          |
 | ------------ | ------------------------------------------------------------- |
 | **Frontend** | React, Axios, React-Router, Redux Toolkit                     |
@@ -66,7 +67,11 @@
 | **AI (ML)**  | Python, Flask, Hugging Face Transformers                      |
 | **DevOps**   | Git                                                           |
 
+</div>
+
 <br>
+
+<a id="system-architecture"></a>
 
 ## 🏛️ 시스템 아키텍처 (System Architecture)
 
@@ -174,8 +179,9 @@ sequenceDiagram
 
 ## 🔗 ERD
 
-<p align="center"><img width="600" height="710" alt="ERD diagram" src="https://github.com/user-attachments/assets/b4e1ec53-3b9a-43b2-819f-d74a4e2ed599" /></p>
+📊 전체 테이블 구조는 [Google Sheets] https://docs.google.com/spreadsheets/d/1bTXc3KSDw5LSB-16UCVfFV8iHM6LN_cmsZGpj8ih0rE/edit?usp=sharing 에서 확인할 수 있습니다.
 
+<p align="center"><img width="600" alt="ERD diagram" src="https://github.com/user-attachments/assets/b4e1ec53-3b9a-43b2-819f-d74a4e2ed599" /></p>
 
 <br>
 
@@ -310,6 +316,8 @@ public String uploadFile(String uploadPath, String originalFileName, byte[] file
 
 👉 전체 API 문서는 [Postman Docs](https://documenter.getpostman.com/view/48241033/2sB3QFPrEj) 에서 확인할 수 있습니다.
 
+<div align="center">
+
 | 구분       | 메서드 | 엔드포인트          | 설명                      |
 | ---------- | ------ | ------------------- | ------------------------- |
 | Auth       | POST   | /api/auth/login     | 로그인 (JWT 발급)         |
@@ -322,6 +330,7 @@ public String uploadFile(String uploadPath, String originalFileName, byte[] file
 | Notices    | DELETE | /api/notices/{id}   | 공지사항 삭제 (관리자)    |
 | Review     | POST   | /api/review         | 리뷰 작성 (이미지 업로드) |
 
+</div>
 
 <br>
 
@@ -331,26 +340,63 @@ public String uploadFile(String uploadPath, String originalFileName, byte[] file
 
 #### 👉 JPA Fetch 전략 최적화로 쿼리 성능 개선
 
-* **문제 상황**
+- **문제 상황**
 
-  * 게시글(BoardPost) 목록 조회 시, 작성자(User) 정보를 지연 로딩(LAZY)으로 가져오면서 불필요한 N개의 추가 쿼리가 발생하는 N+1 문제를 발견.
-  * 게시글 100개 조회 시 총 101번의 쿼리가 실행되어 성능 저하 발생.
+  - 게시글(`BoardPost`) 목록 조회 시, 연관된 작성자(`User`) 정보를 지연 로딩(LAZY)으로 가져오면서 불필요한 N개의 추가 쿼리가 발생하는 N+1 문제를 발견했습니다.
+  - API를 호출하면 아래와 같이 게시글 목록을 조회하는 쿼리 1개 실행 후, 각 게시글의 작성자 정보를 조회하는 N개의 쿼리가 추가로 발생하는 것을 로그로 확인했습니다.
 
-* **해결 과정**
+<details>
+<summary><b>AS-IS: 실행 쿼리 로그 확인하기 (클릭)</b></summary>
 
-  * JPQL `JOIN FETCH`를 적용하여 `BoardPost`와 연관된 `User` 엔티티를 한 번의 쿼리로 조회하도록 리팩토링.
-  * 지연 로딩으로 인한 N+1 문제를 근본적으로 제거.
+```sql
+-- 1. 게시글 목록 조회 (쿼리 1번)
+Hibernate: 
+    select ... from board_post bp1_0 order by bp1_0.created_at desc limit ?, ?
 
-* **결과**
+-- 2. 각 게시글의 작성자(User) 정보를 개별적으로 조회 (쿼리 N번)
+Hibernate: 
+    select ... from users u1_0 where u1_0.member_id=?
+Hibernate: 
+    select ... from users u1_0 where u1_0.member_id=?
+-- (게시글 수만큼 반복)
+```
 
-  * 101번 실행되던 쿼리를 1번으로 최적화, DB 부하를 크게 감소.
-  * API 평균 응답 속도가 **약 52% 개선 (250ms → 120ms)**.
-  * ORM Fetch 전략 및 성능 병목 구간 최적화 역량 확보.
+</details>
+
+- **해결 과정**
+
+  - JPQL `JOIN FETCH`를 적용하여 `BoardPost`와 연관된 `User` 엔티티를 **한 번의 `JOIN` 쿼리**로 함께 조회하도록 리팩토링했습니다.
+  - 페이징 처리를 위해 `countQuery`를 별도로 분리하여, 데이터 조회와 전체 개수 계산 로직을 모두 최적화했습니다.
+
+- **결과**
+
+  - **(N+1)번 실행되던 쿼리를 단 2번(데이터 조회 1번, Count 1번)으로 최적화**하여 DB 부하를 크게 감소시켰습니다.
+  - API 평균 응답 속도가 **약 52% 개선 (250ms → 120ms)**.
+  - ORM Fetch 전략 및 성능 병목 구간 최적화 역량을 확보했습니다.
+
+<details>
+<summary><b>TO-BE: 최적화된 쿼리 로그 확인하기 (클릭)</b></summary>
+
+```sql
+-- 1. 게시글과 작성자 정보를 JOIN하여 한 번에 조회 (쿼리 1번)
+Hibernate: 
+    select ..., m1_0.member_id, m1_0.email, ... 
+    from board_post bp1_0 
+    join users m1_0 on m1_0.member_id=bp1_0.member_id 
+    order by bp1_0.created_at desc limit ?
+
+-- 2. 페이징을 위한 전체 개수 조회 (쿼리 1번)
+Hibernate: 
+    select count(bp1_0.board_id) from board_post bp1_0
+```
+
+</details>
 
 ```java
 // BoardRepository.java
-@Query("SELECT b FROM BoardPost b JOIN FETCH b.member ORDER BY b.createdAt DESC")
-List<BoardPost> findAllWithUser();
+@Query(value = "SELECT b FROM BoardPost b JOIN FETCH b.member",
+       countQuery = "SELECT count(b) FROM BoardPost b")
+Page<BoardPost> findAllWithUser(Pageable pageable);
 ```
 
 ---
@@ -359,22 +405,22 @@ List<BoardPost> findAllWithUser();
 
 #### 👉 Native Query 기반으로 데이터 계층에서 직접 처리
 
-* **문제 상황**
+- **문제 상황**
 
-  * 리뷰 추천 로직이 AI 서버(Flask)에 과도하게 의존.
-  * 불필요한 API 호출 + 대량 데이터 전송으로 네트워크 지연 및 메모리 부하 발생.
+  - 리뷰 추천 로직이 AI 서버(Flask)에 과도하게 의존.
+  - 불필요한 API 호출 + 대량 데이터 전송으로 네트워크 지연 및 메모리 부하 발생.
 
-* **해결 과정**
+- **해결 과정**
 
-  * 추천 로직(유사도 계산 + 정렬 + 개수 제한)을 DB Native Query로 재구현.
-  * 모든 연산을 DB에서 처리하고, 애플리케이션은 최종 결과만 수신하도록 아키텍처 개선.
+  - 추천 로직(유사도 계산 + 정렬 + 개수 제한)을 DB Native Query로 재구현.
+  - 모든 연산을 DB에서 처리하고, 애플리케이션은 최종 결과만 수신하도록 아키텍처 개선.
 
-* **결과**
+- **결과**
 
-  * 불필요한 외부 API 호출 제거 → AI 서버 장애/지연의 영향 최소화.
-  * 복잡한 연산을 DB로 위임하여 서버 자원(CPU·메모리) 최적화.
-  * 책임과 역할을 계층별로 분리, 안정성과 성능 모두 개선.
-  * 시스템의 비효율을 아키텍처 관점에서 진단하고, 책임과 역할의 재분배를 통해 성능을 개선하는 역량 확보
+  - 불필요한 외부 API 호출 제거 → AI 서버 장애/지연의 영향 최소화.
+  - 복잡한 연산을 DB로 위임하여 서버 자원(CPU·메모리) 최적화.
+  - 책임과 역할을 계층별로 분리, 안정성과 성능 모두 개선.
+  - 시스템의 비효율을 아키텍처 관점에서 진단하고, 책임과 역할의 재분배를 통해 성능을 개선하는 역량 확보
 
 ```java
 // ReviewRepository.java
@@ -392,20 +438,20 @@ List<Review> findSimilarReviews(@Param("sentiment") int sentiment,
 
 #### 👉 FilterChain 재구성과 권한(Role) 매핑 수정
 
-* **문제 상황**
+- **문제 상황**
 
-  * JWT 토큰이 정상 발급되었음에도 일부 API 요청에서 `403 Forbidden` 발생.
-  * 사용자 권한(Role)에 따른 접근 제어가 기대와 다르게 동작.
+  - JWT 토큰이 정상 발급되었음에도 일부 API 요청에서 `403 Forbidden` 발생.
+  - 사용자 권한(Role)에 따른 접근 제어가 기대와 다르게 동작.
 
-* **해결 과정**
+- **해결 과정**
 
-  * `JwtAuthFilter`를 `UsernamePasswordAuthenticationFilter` 앞에 등록하여 토큰 검증 순서 보장.
-  * `requestMatchers()`로 엔드포인트별 권한을 명확히 재정의.
+  - `JwtAuthFilter`를 `UsernamePasswordAuthenticationFilter` 앞에 등록하여 토큰 검증 순서 보장.
+  - `requestMatchers()`로 엔드포인트별 권한을 명확히 재정의.
 
-* **결과**
+- **결과**
 
-  * 인증/인가 로직이 정상적으로 동작하며, 역할(Role) 기반 접근 제어 확립.
-  * Spring Security FilterChain의 실행 순서와 커스터마이징 방법에 대한 깊은 이해 확보.
+  - 인증/인가 로직이 정상적으로 동작하며, 역할(Role) 기반 접근 제어 확립.
+  - Spring Security FilterChain의 실행 순서와 커스터마이징 방법에 대한 깊은 이해 확보.
 
 ```java
 @Bean
@@ -435,43 +481,52 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 
 <br>
 
+<a id="screenshots"></a>
+
 ## 🖼️ 결과 화면
 
 ### 회원가입 & 로그인
 
-- **회원가입** : 입력 → 완료 페이지  
-- **로그인** : 입력 → 완료 알림  
-- **회원정보 수정** : 비밀번호 확인 → 수정 페이지
-
 https://github.com/user-attachments/assets/005a20c5-653e-499a-b300-615a61b077fd
+
+<div align="center">
+
+| 기능          | 설명                                     | 화면                                                                                                      |
+| ------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 회원가입      | 사용자 정보 입력 후 가입 완료            | <img width="250" src="https://github.com/user-attachments/assets/e845bf2a-cc45-4d2e-8256-a882ff6eed7e" /> |
+| 로그인        | 아이디/비밀번호 입력 후 로그인 성공 알림 | <img width="250" src="https://github.com/user-attachments/assets/559e0871-cf4a-4338-b37f-8c60fbb5d539" /> |
+| 회원정보 수정 | 비밀번호 확인 후 수정 가능               | <img width="250" src="https://github.com/user-attachments/assets/5a29246e-2feb-4d95-b471-ffb0c97c6425" /> |
+
+</div>
 
 <br>
 
-<img width="45%" alt="회원가입 - 입력완료" src="https://github.com/user-attachments/assets/e845bf2a-cc45-4d2e-8256-a882ff6eed7e" />
-<img width="45%" alt="회원정보수정 - 비밀번호 확인" src="https://github.com/user-attachments/assets/5a29246e-2feb-4d95-b471-ffb0c97c6425" />
+<details> 
+<summary>📂 전체 화면 더보기</summary>
 
-<details> <summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="회원가입완료페이지" src="https://github.com/user-attachments/assets/1b426227-7996-40bf-a6b9-9b5d1453e711" />
-<img width="45%" alt="로그인 - 입력전" src="https://github.com/user-attachments/assets/559e0871-cf4a-4338-b37f-8c60fbb5d539" />
 <img width="45%" alt="로그인 완료 알림" src="https://github.com/user-attachments/assets/0a94fc19-34cc-4db0-9f33-6d985b4dae58" />
 <img width="45%" alt="회원정보수정 - 페이지" src="https://github.com/user-attachments/assets/6ed8d9a7-1cf7-4b81-a033-0ddcc4d72c98" />
+
 </details>
 
 <br>
 
 ### 리뷰 작성 + AI 감성 분석 결과
 
-- 리뷰 작성 클릭 → 로그인 필요 알림 → 리뷰 작성 → 등록 완료  
-- 등록 후 상세 페이지 (삭제 버튼은 로그인 시 작성자일 경우 노출)  
-- 삭제 시 확인/완료 알림창
-
-
 https://github.com/user-attachments/assets/7cff6deb-b71f-4440-ab76-a543d5d1e846
 
-<br>
+<div align="center">
 
-<img width="45%" alt="리뷰 - 작성페이지" src="https://github.com/user-attachments/assets/79bd857e-56e3-4971-946f-8ac12ddfb11f" />
-<img width="45%" alt="리뷰 - 상세페이지" src="https://github.com/user-attachments/assets/97737fdc-c9df-4fe7-a12d-3fa9bb49c3b9" />
+| 기능      | 설명                                 | 화면                                                                                                      |
+| --------- | ------------------------------------ | --------------------------------------------------------------------------------------------------------- |
+| 리뷰 작성 | 로그인 필요 알림 후 작성 가능        | <img width="250" src="https://github.com/user-attachments/assets/79bd857e-56e3-4971-946f-8ac12ddfb11f" /> |
+| 리뷰 상세 | 감성 분석 결과와 함께 리뷰 상세 표시 | <img width="250" src="https://github.com/user-attachments/assets/97737fdc-c9df-4fe7-a12d-3fa9bb49c3b9" /> |
+| 리뷰 삭제 | 작성자 로그인 시 삭제 가능           | <img width="250" src="https://github.com/user-attachments/assets/03369202-cfb4-4a9c-8998-bd4b24b01358" /> |
+
+</div>
+
+<br>
 
 <details> <summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="리뷰 - 리스트페이지" src="https://github.com/user-attachments/assets/b8d36d8c-a595-4c2d-b002-0aa259361e4a" />
@@ -479,32 +534,32 @@ https://github.com/user-attachments/assets/7cff6deb-b71f-4440-ab76-a543d5d1e846
 <img width="45%" alt="리뷰 - 작성(로그인필요알림)" src="https://github.com/user-attachments/assets/562bea68-eb57-43af-bf40-9692d75e172d" />
 <img width="45%" alt="리뷰 - 등록 완료 상세 페이지 ( 로그인 시 삭제 버튼 노출 )" src="https://github.com/user-attachments/assets/c481cfc1-8d0d-435d-802e-f45841dea07a" />
 <img width="45%" alt="리뷰 - 삭제 확인 알림창" src="https://github.com/user-attachments/assets/daf02093-1cfe-450a-abff-9f231a9a1982" />
-<img width="45%" alt="리뷰 - 삭제 완료 알림창" src="https://github.com/user-attachments/assets/03369202-cfb4-4a9c-8998-bd4b24b01358" />
 </details>
 
 <br>
 
 ### Q&A 게시판 & 관리자 답변
 
-- 사용자 문의 작성 (회원/비회원) → 상세 조회 → (비공개글) 비밀번호 확인 필요 / (관리자) 비공개글 관계없이 조회 가능  
-- 마이페이지 → 내 문의 내역 확인 → 상세 조회  
-- 관리자 답변 등록 → 수정
-
-
 https://github.com/user-attachments/assets/ca8a06f3-3e3c-4c18-b290-5cb2f1c1267c
 
 https://github.com/user-attachments/assets/00a4aa2b-4adb-484c-bc8a-195c9c102d4d
 
-<br>
+<div align="center">
 
-<img width="45%" alt="Q A - 문의 작성(비회원)" src="https://github.com/user-attachments/assets/b46cede5-5fe0-43cf-b2ec-90385a9c77da" />
-<img width="45%" alt="Q A - (관리자)문의 상세페이지 답변 확인" src="https://github.com/user-attachments/assets/fff50eeb-c41f-4cc2-bda0-cda91ed8f284" />
+| 기능        | 설명                                                                   | 화면                                                                                                      |
+| ----------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 문의 작성   | 회원/비회원 모두 작성 가능 (비공개글 지원)                             | <img width="250" src="https://github.com/user-attachments/assets/b46cede5-5fe0-43cf-b2ec-90385a9c77da" /> |
+| 문의 상세   | 회원은 본인 글만, 비공개글 비밀번호 입력 필요, 관리자는 전체 열람 가능 | <img width="250" src="https://github.com/user-attachments/assets/6b8a928b-fc4e-49c7-97ac-9dbdaf169ce2" /> |
+| 관리자 답변 | 관리자 계정으로 답변 등록/수정                                         | <img width="250" src="https://github.com/user-attachments/assets/fff50eeb-c41f-4cc2-bda0-cda91ed8f284" /> |
+
+</div>
+
+<br>
 
 <details> <summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="Q A - 리스트" src="https://github.com/user-attachments/assets/8d930b1d-d466-4ce3-9b3c-1b08c69dabb6" />
 <img width="45%" alt="Q A - 문의 작성(회원)" src="https://github.com/user-attachments/assets/054193a8-6b4c-4cae-90a4-dfa2abd8e582" />
 <img width="45%" alt="Q A - (회원)내문의내역 확인" src="https://github.com/user-attachments/assets/bd916321-aa72-4c86-a7e6-587b23888bae" />
-<img width="45%" alt="Q A - 문의 작성(비회원)" src="https://github.com/user-attachments/assets/b46cede5-5fe0-43cf-b2ec-90385a9c77da" />
 <img width="45%" alt="Q A - 비공개 글 비밀번호 확인" src="https://github.com/user-attachments/assets/b577b90f-a807-4619-80e3-59dcb824d082" />
 <img width="45%" alt="Q A - 문의 상세 조회" src="https://github.com/user-attachments/assets/6b8a928b-fc4e-49c7-97ac-9dbdaf169ce2" />
 <img width="45%" alt="Q A - 문의 상세 조회 (비밀번호 불일치)" src="https://github.com/user-attachments/assets/2bc04911-050e-4b3d-ac2c-5ec47f45c8b6" />
@@ -520,41 +575,49 @@ https://github.com/user-attachments/assets/00a4aa2b-4adb-484c-bc8a-195c9c102d4d
 
 ### 공지사항 (관리자 전용 CRUD)
 
-- (관리자) 공지사항 등록 → 상세 페이지 → 수정 → 삭제
-- (사용자) 공지사항 조회만 가능
-
-
 https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
 
-<br>
+<div align="center">
 
-<img width="45%" alt="캘린더 - (관리자) 등록하기 버튼 노출" src="https://github.com/user-attachments/assets/6c0e647e-4b0d-4756-8b44-05ee50db9c09" />
-<img width="45%" alt="캘린더 - 등록 페이지" src="https://github.com/user-attachments/assets/5c91d1fc-f31a-4fc9-b69f-ee2062612a91" />
+| 기능           | 설명                                  | 화면                                                                                                      |
+| -------------- | ------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| 공지 등록      | 관리자만 공지 작성 가능               | <img width="250" src="https://github.com/user-attachments/assets/6c0e647e-4b0d-4756-8b44-05ee50db9c09" /> |
+| 공지 상세      | 사용자 누구나 열람 가능               | <img width="250" src="https://github.com/user-attachments/assets/fec73c6a-d364-4fa6-b0c5-671c59987530" /> |
+| 공지 수정/삭제 | 관리자 권한 확인 후 수정 및 삭제 가능 | <img width="250" src="https://github.com/user-attachments/assets/66877d4a-49b7-4d4a-b875-ff5e20afe816" /> |
+
+</div>
+
+<br>
 
 <details> <summary>📂 전체 화면 더보기</summary>
+<img width="45%" alt="캘린더 - 등록 페이지" src="https://github.com/user-attachments/assets/5c91d1fc-f31a-4fc9-b69f-ee2062612a91" />
 <img width="45%" alt="캘린더 - 리스트" src="https://github.com/user-attachments/assets/eef3cd5d-ef63-43e5-97db-09a4e31b49e1" />
-<img width="45%" alt="캘린더 - 상세페이지(상단)" src="https://github.com/user-attachments/assets/fec73c6a-d364-4fa6-b0c5-671c59987530" />
 <img width="45%" alt="캘린더 - 상세페이지(하단)" src="https://github.com/user-attachments/assets/e5643603-e303-410e-941a-5a10ad9c83d1" />
-<img width="45%" alt="캘린더 - 상세페이지(하단, 관리자 외)" src="https://github.com/user-attachments/assets/f7954439-d9f0-4536-afd2-e60e8526c1b3" />
-<img width="45%" alt="캘린더 - 수정페이지" src="https://github.com/user-attachments/assets/66877d4a-49b7-4d4a-b875-ff5e20afe816" />
-<img width="45%" alt="캘린더 - 수정 완료 페이지" src="https://github.com/user-attachments/assets/8b161c6a-c1b8-47ab-b080-256ca690478f" />
-</details>
+<img width="45%" alt="캘린더 - 상세페이지(하단, 관리자 외)" src="https://github.com/user-attachments/assets/f7954439-d9f0-4536-afd2-e60e8526c1b3"고
 
 <br>
 
-## 📝 회고 & 배운 점
+## 📝 회고
 
-### 📚 배운 점
+### 📚 프로젝트 성과
 
 - JWT 인증/인가와 Spring Security FilterChain 동작 원리를 이해하고 적용.
-    - `JwtAuthFilter`를 직접 구현하여 토큰 검증 → SecurityContext 반영 → 권한(Role) 기반 접근 제어 흐름을 이해 및 적용.
-    - 보안 아키텍처의 핵심 원리를 실습하며 Spring Security 구조에 대한 이해도 강화.
+
+  - `JwtAuthFilter`를 직접 구현하여 토큰 검증 → SecurityContext 반영 → 권한(Role) 기반 접근 제어 흐름을 이해 및 적용.
+  - 보안 아키텍처의 핵심 원리를 실습하며 Spring Security 구조에 대한 이해도 강화.
 
 - 마이크로서비스 연동을 통해 독립 배포 가능한 AI 기능 구현 경험 확보.
+
   - Flask 기반 AI 감성 분석 서비스를 별도 서버로 구축 후 `Spring Boot`와 `REST API`로 연동.
   - 독립 배포 및 확장이 가능한 구조를 경험하며 MSA 아키텍처의 장점 체득.
 
+- DB 설계 및 정규화 경험
+
+  - 사용자, 게시판, 리뷰, 공지 등 실제 서비스 요구사항을 반영한 테이블과 관계를 설계.
+  - 외래키 제약조건과 ENUM 타입을 활용해 데이터 무결성과 일관성을 보장하며 ERD 기반 모델링 능력 강화.
+
 - ERD → JPA 매핑 및 N+1 문제 해결
+
   - 연관관계 매핑, 즉시/지연 로딩 전략, fetch join, EntityGraph를 적용하며 ORM 최적화 경험.
   - N+1 문제를 직접 마주하고 해결하며 `데이터 접근 최적화` 역량 강화.
 

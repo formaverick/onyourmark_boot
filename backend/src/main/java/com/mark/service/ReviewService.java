@@ -60,7 +60,6 @@ public class ReviewService {
 
         ReviewUserResponse memberSum = ReviewUserResponse.from(review.getMember());
 
-        // 로직 최적화: 불필요한 API 호출 대신 DB에서 직접 조회
         List<ReviewListItem> relatedReviews = getSimilarReviews(review.getSentiment(), review.getId());
 
         return ReviewResponse.builder()

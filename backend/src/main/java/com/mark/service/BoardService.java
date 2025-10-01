@@ -29,7 +29,7 @@ public class BoardService {
 
     @Transactional(readOnly = true)
     public Page<BoardPostResponse> boardlist(Pageable pageable){
-        return boardRepository.findAll(pageable).map(
+        return boardRepository.findAllWithUser(pageable).map(
                 p -> toResponse(p).toBuilder()
                         .content(null)
                         .views(p.getViews())
