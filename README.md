@@ -72,7 +72,6 @@
 <br>
 
 <a id="system-architecture"></a>
-
 ## 🏛️ 시스템 아키텍처 (System Architecture)
 
 ```mermaid
@@ -482,7 +481,6 @@ public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Excepti
 <br>
 
 <a id="screenshots"></a>
-
 ## 🖼️ 결과 화면
 
 ### 회원가입 & 로그인
@@ -528,7 +526,8 @@ https://github.com/user-attachments/assets/7cff6deb-b71f-4440-ab76-a543d5d1e846
 
 <br>
 
-<details> <summary>📂 전체 화면 더보기</summary>
+<details> 
+<summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="리뷰 - 리스트페이지" src="https://github.com/user-attachments/assets/b8d36d8c-a595-4c2d-b002-0aa259361e4a" />
 <img width="45%" alt="리뷰 - 작성페이지" src="https://github.com/user-attachments/assets/79bd857e-56e3-4971-946f-8ac12ddfb11f" />
 <img width="45%" alt="리뷰 - 작성(로그인필요알림)" src="https://github.com/user-attachments/assets/562bea68-eb57-43af-bf40-9692d75e172d" />
@@ -556,7 +555,8 @@ https://github.com/user-attachments/assets/00a4aa2b-4adb-484c-bc8a-195c9c102d4d
 
 <br>
 
-<details> <summary>📂 전체 화면 더보기</summary>
+<details> 
+<summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="Q A - 리스트" src="https://github.com/user-attachments/assets/8d930b1d-d466-4ce3-9b3c-1b08c69dabb6" />
 <img width="45%" alt="Q A - 문의 작성(회원)" src="https://github.com/user-attachments/assets/054193a8-6b4c-4cae-90a4-dfa2abd8e582" />
 <img width="45%" alt="Q A - (회원)내문의내역 확인" src="https://github.com/user-attachments/assets/bd916321-aa72-4c86-a7e6-587b23888bae" />
@@ -589,12 +589,14 @@ https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
 
 <br>
 
-<details> <summary>📂 전체 화면 더보기</summary>
+<details> 
+<summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="캘린더 - 등록 페이지" src="https://github.com/user-attachments/assets/5c91d1fc-f31a-4fc9-b69f-ee2062612a91" />
 <img width="45%" alt="캘린더 - 리스트" src="https://github.com/user-attachments/assets/eef3cd5d-ef63-43e5-97db-09a4e31b49e1" />
 <img width="45%" alt="캘린더 - 상세페이지(하단)" src="https://github.com/user-attachments/assets/e5643603-e303-410e-941a-5a10ad9c83d1" />
-<img width="45%" alt="캘린더 - 상세페이지(하단, 관리자 외)" src="https://github.com/user-attachments/assets/f7954439-d9f0-4536-afd2-e60e8526c1b3"고
-
+<img width="45%" alt="캘린더 - 상세페이지(하단, 관리자 외)" src="https://github.com/user-attachments/assets/f7954439-d9f0-4536-afd2-e60e8526c1b3">
+</details>
+  
 <br>
 
 ## 📝 회고
@@ -612,7 +614,6 @@ https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
   - 독립 배포 및 확장이 가능한 구조를 경험하며 MSA 아키텍처의 장점 체득.
 
 - DB 설계 및 정규화 경험
-
   - 사용자, 게시판, 리뷰, 공지 등 실제 서비스 요구사항을 반영한 테이블과 관계를 설계.
   - 외래키 제약조건과 ENUM 타입을 활용해 데이터 무결성과 일관성을 보장하며 ERD 기반 모델링 능력 강화.
 
