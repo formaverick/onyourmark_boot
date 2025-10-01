@@ -556,15 +556,9 @@ https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
 <img width="45%" alt="캘린더 - 등록 페이지" src="https://github.com/user-attachments/assets/5c91d1fc-f31a-4fc9-b69f-ee2062612a91" />
 <img width="45%" alt="캘린더 - 리스트" src="https://github.com/user-attachments/assets/eef3cd5d-ef63-43e5-97db-09a4e31b49e1" />
 <img width="45%" alt="캘린더 - 상세페이지(하단)" src="https://github.com/user-attachments/assets/e5643603-e303-410e-941a-5a10ad9c83d1" />
-<img width="45%" alt="캘린더 - 상세페이지(하단, 관리자 외)" src="https://github.com/user-attachments/assets/f7954439-d9f0-4536-afd2-e60e8526c1b3" />
-<img width="45%" alt="캘린더 - 수정 완료 페이지" src="https://github.com/user-attachments/assets/8b161c6a-c1b8-47ab-b080-256ca690478f" />
-</details>
+<img width="45%" alt="캘린더 - 상세페이지(하단, 관리자 외)" src="https://github.com/user-attachments/assets/f7954439-d9f0-4536-afd2-e60e8526c1b3"고
 
-<br>
-
-## 📝 회고 & 배운 점
-
-### 📚 배운 점
+### 📚 프로젝트 성과
 
 - JWT 인증/인가와 Spring Security FilterChain 동작 원리를 이해하고 적용.
     - `JwtAuthFilter`를 직접 구현하여 토큰 검증 → SecurityContext 반영 → 권한(Role) 기반 접근 제어 흐름을 이해 및 적용.
