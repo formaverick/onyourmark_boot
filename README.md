@@ -2,8 +2,7 @@
 
 <br>
 
-`ONYOURMARK`는 **러닝 전문 이커머스 플랫폼 [온유어마크(onyourmark-running.com)](https://onyourmark-running.com)을 클론**하여,
-단순 이커머스 기능을 넘어 **커뮤니티 중심의 풀스택 플랫폼**으로 확장 및 재구현한 프로젝트입니다.  
+`ONYOURMARK`는 **러닝 전문 이커머스 플랫폼 [온유어마크(onyourmark-running.com)](https://onyourmark-running.com)을 클론**하여, **풀스택 플랫폼**으로 확장 및 재구현한 프로젝트입니다.  
 사용자 중심의 동적인 웹 서비스를 제공하며, 안정적이고 확장 가능한 아키텍처 설계를 목표로 개발되었습니다.
 
 <p align="center"><img width="621" height="748" alt="main" src="https://github.com/user-attachments/assets/f15068b4-3033-4b5e-b18e-a05dd0ff15f6" /></p>
