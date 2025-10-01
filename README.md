@@ -17,8 +17,8 @@
 - [🏛️ 시스템 아키텍처](#system-architecture)
 - [🌊 시퀀스 다이어그램](#-시퀀스-다이어그램-sequence-diagrams)
 - [🔗 ERD](#-erd)
-- [✨ 주요 기능](#-주요-기능)
 - [📝 API 명세](#-api-명세)
+- [✨ 주요 기능](#-주요-기능)
 - [🤯 트러블 슈팅](#-트러블-슈팅)
 - [🖼️ 결과 화면](#screenshots)
 - [📝 회고](#-회고)
@@ -184,6 +184,28 @@ sequenceDiagram
 
 <br>
 
+## 📝 API 명세
+
+👉 전체 API 문서는 [Postman Docs](https://documenter.getpostman.com/view/48241033/2sB3QFPrEj) 에서 확인할 수 있습니다.
+
+<div align="center">
+
+| 구분       | 메서드 | 엔드포인트          | 설명                      |
+| ---------- | ------ | ------------------- | ------------------------- |
+| Auth       | POST   | /api/auth/login     | 로그인 (JWT 발급)         |
+| Auth       | POST   | /api/auth/signup    | 회원가입                  |
+| Members    | GET    | /api/members/member | 내 정보 조회              |
+| Board(Q&A) | POST   | /api/board/new      | 게시글 작성               |
+| Board(Q&A) | DELETE | /api/board/{id}     | 게시글 삭제               |
+| Reposts    | POST   | /api/reposts/{id}   | 답변 작성 (관리자 전용)   |
+| Notices    | GET    | /api/notices        | 공지사항 목록             |
+| Notices    | DELETE | /api/notices/{id}   | 공지사항 삭제 (관리자)    |
+| Review     | POST   | /api/review         | 리뷰 작성 (이미지 업로드) |
+
+</div>
+
+<br>
+
 ## ✨ 주요 기능
 
 ### 1. JWT 기반 인증 및 인가
@@ -311,27 +333,6 @@ public String uploadFile(String uploadPath, String originalFileName, byte[] file
 
 <br>
 
-## 📝 API 명세
-
-👉 전체 API 문서는 [Postman Docs](https://documenter.getpostman.com/view/48241033/2sB3QFPrEj) 에서 확인할 수 있습니다.
-
-<div align="center">
-
-| 구분       | 메서드 | 엔드포인트          | 설명                      |
-| ---------- | ------ | ------------------- | ------------------------- |
-| Auth       | POST   | /api/auth/login     | 로그인 (JWT 발급)         |
-| Auth       | POST   | /api/auth/signup    | 회원가입                  |
-| Members    | GET    | /api/members/member | 내 정보 조회              |
-| Board(Q&A) | POST   | /api/board/new      | 게시글 작성               |
-| Board(Q&A) | DELETE | /api/board/{id}     | 게시글 삭제               |
-| Reposts    | POST   | /api/reposts/{id}   | 답변 작성 (관리자 전용)   |
-| Notices    | GET    | /api/notices        | 공지사항 목록             |
-| Notices    | DELETE | /api/notices/{id}   | 공지사항 삭제 (관리자)    |
-| Review     | POST   | /api/review         | 리뷰 작성 (이미지 업로드) |
-
-</div>
-
-<br>
 
 ## 🤯 트러블 슈팅
 
