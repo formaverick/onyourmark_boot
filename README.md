@@ -20,6 +20,7 @@
 - [✨ 주요 기능](#-주요-기능)
 - [🤯 트러블 슈팅](#-트러블-슈팅)
 - [🖼️ 결과 화면](#screenshots)
+- [🚀 프로젝트 인사이트](#-프로젝트-인사이트)
 - [📝 회고](#-회고)
 
 <br>
@@ -229,6 +230,29 @@ sequenceDiagram
     DB-->>BoardRepostService: repost_id
     BoardRepostService-->>BoardRepostController: id
     BoardRepostController-->>React: 답변 등록 완료
+```
+
+### 4. 🖇️ FileUpload
+
+```mermaid
+sequenceDiagram
+    participant User as User(클라이언트)
+    participant Controller as Notice/Review Controller
+    participant Service as NoticeService/ReviewService
+    participant ImgService as NoticeImgService/ReviewImgService
+    participant FileService as FileService
+    participant FS as FileSystem(서버 디렉토리)
+
+    User->>Controller: 업로드 요청 (MultipartFile)
+    Controller->>Service: create()/update() 호출
+    Service->>ImgService: save(entity, MultipartFile)
+    ImgService->>FileService: uploadFile(path, fileData)
+    FileService->>FS: 파일 저장 (UUID+날짜폴더)
+    FS-->>FileService: 저장 완료
+    FileService-->>ImgService: 저장된 파일명 반환
+    ImgService-->>Service: ReviewImg/NoticeImg 엔티티 생성 및 저장
+    Service-->>Controller: 업로드 성공 응답
+    Controller-->>User: HTTP 201 Created
 ```
 
 <br>
@@ -636,34 +660,38 @@ list → detail → write/edit → repostWrite/edit → password 모드로 전�
 
 ---
 
-### 4. 안정적인 파일 업로드
+### 4. 📂 파일 업로드 공통 처리
 
-- 파일 입출력 로직을 `FileService`라는 범용 서비스로 분리하여 역할과 책임을 명확히 하고(SRP), 코드의 재사용성을 높였습니다.
-- `UUID`를 이용해 파일명을 생성하여 이름 충돌을 방지하고, 날짜 기반으로 폴더를 생성하여 파일을 체계적으로 관리합니다.
+- 파일 업로드는 **공지사항(Notice) / 리뷰(Review)** 에서 공통적으로 사용되며, `FileService`라는 범용 서비스로 **파일 저장 책임을 분리**하여 코드 중복을 제거했습니다. 
+  - `UUID`를 이용한 안전한 파일명 생성 → 이름 충돌 방지  
+  - `yyyy/MM/dd` 형식의 날짜 기반 디렉토리 생성 → 체계적인 파일 관리  
+  - 서비스 단(`NoticeImgService`, `ReviewImgService`)에서는 **DB 엔티티 저장만 담당** 으로 역할 분리
 
 ```java
-// ReviewImgService.java - 도메인 특화 서비스
-public ReviewImg save(Review review, MultipartFile file) throws Exception {
-    String oriImgName = file.getOriginalFilename();
-    String today = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
-    String savePath = reviewImgLocation + "/" + today;
-
-    // 범용 FileService에 파일 저장을 위임
-    String saved = fileService.uploadFile(savePath, oriImgName, file.getBytes());
-
-    ReviewImg img = ReviewImg.builder() ... .build();
-    return reviewImgRepository.save(img);
-}
-
 // FileService.java - 범용 파일 저장 서비스
-public String uploadFile(String uploadPath, String originalFileName, byte[] fileData) throws Exception {
-    Path dir = Paths.get(uploadPath).toAbsolutePath().normalize();
-    Files.createDirectories(dir);
-    String saved = UUID.randomUUID() + "." + getExtension(originalFileName);
-    Path target = dir.resolve(saved).normalize();
-    Files.copy(new java.io.ByteArrayInputStream(fileData), target, StandardCopyOption.REPLACE_EXISTING);
-    return saved;
-}
+public String uploadFile(String uploadPath, String originalFileName, byte[] fileData)
+        throws Exception {
+
+        Path dir = Paths.get(uploadPath).toAbsolutePath().normalize();
+        Files.createDirectories(dir);
+
+        String safeName = Objects.toString(originalFileName, "");
+        String ext = "";
+        int dot = safeName.lastIndexOf('.');
+        if (dot > -1 && dot < safeName.length() - 1) {
+            ext = safeName.substring(dot).toLowerCase(); // ".jpg"
+        }
+
+        String saved = UUID.randomUUID() + ext;
+        Path target = dir.resolve(saved).normalize();
+
+        try (InputStream in = new java.io.ByteArrayInputStream(fileData)) {
+            Files.copy(in, target, StandardCopyOption.REPLACE_EXISTING);
+        }
+
+        log.info("파일 저장: {} -> {}", originalFileName, target);
+        return saved;
+    }
 ```
 
 <br>
@@ -935,38 +963,81 @@ https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
   
 <br>
 
+## 🚀 프로젝트 인사이트
+
+#### 1) 안전한 JWT 기반 인증/인가
+
+- 기존 세션/쿠키 방식 대신 JWT(Json Web Token) 기반 인증을 도입.
+- 로그인 시 발급된 토큰을 localStorage에 저장하고, API 요청마다 헤더에 포함하여 전송.
+- 서버에서는 토큰을 해석하여 사용자 정보(userid, role) 를 인증 컨텍스트에 등록.
+- @PreAuthorize("hasRole('ADMIN')") 어노테이션을 통해 관리자 전용 기능(공지사항 등록/수정/삭제, 답변 작성)을 안전하게 보호.
+  
+➡️ 세션 없는 확장성 높은 인증 구조를 경험하고, 실무 서비스 수준의 보안 흐름을 체득.
+
+#### 2) AI 감성 분석 기반 리뷰 시스템
+
+- 리뷰 작성 시 Flask + 딥러닝 모델 API를 호출하여 리뷰 감정 점수(긍정~부정) 를 자동 산출.
+- 저장된 리뷰는 sentiment 값을 기준으로 유사 리뷰 추천 기능 제공.
+- 리뷰 본문 + 이미지 업로드가 가능하며, ReviewService에서 Flask API 호출 실패 시 예외 처리/로그 관리 강화.
+
+➡️ 단순 CRUD를 넘어, AI와 연동된 기능 구현 경험을 얻었고, 실사용자 중심의 부가가치 기능(유사 리뷰 추천)을 구현.
+
+#### 3) Q&A 게시판 (회원/비회원 + 관리자 답변)
+
+- 회원: 로그인 후 즉시 작성 가능.
+- 비회원: 작성자명 + 비밀번호 필수 입력 → 이후 조회/수정/삭제 시 검증.
+- 관리자: 답변 작성/수정 가능, 게시글 상태(대기/완료) 표시.
+- React 컴포넌트 단위로 분리(BoardMain, BoardDetail, BoardWriteUser, BoardRepostWrite, BoardPassword)하여 UI/UX 직관성 강화.
+- 백엔드와 API 연동으로 CRUD + 비밀번호 검증 로직을 안정적으로 처리.
+
+➡️ 실제 서비스에 가까운 권한별 게시판 기능을 설계하며, 복잡한 흐름 제어(회원/비회원/관리자)를 학습.
+
+#### 4) 안정적인 파일 업로드 구조
+
+- FileService라는 범용 서비스를 두어 업로드/삭제 로직을 단일화.
+- UUID 파일명 + 날짜 폴더 구조(yyyy/MM/dd)로 저장하여 이름 충돌 방지 및 관리 체계화.
+- 공지사항(NoticeService)과 리뷰(ReviewService)에서 공통 FileService 호출 → 코드 중복 제거 및 유지보수성 강화.
+
+➡️ SRP(단일 책임 원칙) 적용, 운영 안정성과 확장성을 동시에 확보.
+
+#### 5) DB 설계와 무결성 보장
+
+- Users 테이블을 중심으로 Q&A, 리뷰, 공지사항, 답변을 모두 FK 기반으로 연결하여 관계형 무결성 보장.
+- FK는 항상 숫자형 PK(member_id) 로 설계하여 성능과 데이터 안정성을 동시에 확보.
+- Enum(role, writerType, NoticeImgType)을 활용하여 도메인 제약을 DB 레벨에서 강제.
+- 이미지 관리 테이블(notice_img, review_img)을 별도로 분리하여 정규화와 확장성 강화.
+
+➡️ ERD 설계 과정을 통해 전체 시스템의 데이터 흐름을 명확히 하고, 서비스 안정성을 확보.
+
+<br>
+
+---
+
+#### ✨ 한 줄 요약
+
+이번 프로젝트는 JWT 인증 → AI 리뷰 분석 → Q&A 권한 제어 → 파일 업로드 모듈화 → 정규화된 DB 설계까지,
+실무 서비스 수준의 핵심 요소를 모두 경험하고 구현한 프로젝트입니다.
+
+---
+
+<br>
+
 ## 📝 회고
 
-### 📚 프로젝트 성과
+### 프로젝트 전체에서 배운 점
 
-- JWT 인증/인가와 Spring Security FilterChain 동작 원리를 이해하고 적용.
-
-  - `JwtAuthFilter`를 직접 구현하여 토큰 검증 → SecurityContext 반영 → 권한(Role) 기반 접근 제어 흐름을 이해 및 적용.
-  - 보안 아키텍처의 핵심 원리를 실습하며 Spring Security 구조에 대한 이해도 강화.
-
-- 마이크로서비스 연동을 통해 독립 배포 가능한 AI 기능 구현 경험 확보.
-
-  - Flask 기반 AI 감성 분석 서비스를 별도 서버로 구축 후 `Spring Boot`와 `REST API`로 연동.
-  - 독립 배포 및 확장이 가능한 구조를 경험하며 MSA 아키텍처의 장점 체득.
-
-- DB 설계 및 정규화 경험
-  - 사용자, 게시판, 리뷰, 공지 등 실제 서비스 요구사항을 반영한 테이블과 관계를 설계.
-  - 외래키 제약조건과 ENUM 타입을 활용해 데이터 무결성과 일관성을 보장하며 ERD 기반 모델링 능력 강화.
-
-- ERD → JPA 매핑 및 N+1 문제 해결
-
-  - 연관관계 매핑, 즉시/지연 로딩 전략, fetch join, EntityGraph를 적용하며 ORM 최적화 경험.
-  - N+1 문제를 직접 마주하고 해결하며 `데이터 접근 최적화` 역량 강화.
-
-- Postman을 활용한 `API 문서화`와 공유까지 협업 친화적 문서 작성법 학습.
-  - Postman 컬렉션 공유 및 자동 문서화 기능을 활용해 실시간 업데이트 가능한 API 레퍼런스 구축.
+- **보안**: JWT 인증과 권한 제어를 직접 구현하며 실무 수준의 인증 구조를 체득.
+- **AI 연동**: Flask API와의 통신, 예외 처리, 감성 분석 결과를 활용한 UX 개선까지 경험.
+- **UX 중심 개발**: Q&A 게시판에서 회원/비회원/관리자 플로우를 구분하며 다양한 사용자 시나리오 기반 개발의 중요성을 인식.
+- **코드 품질**: 파일 업로드 모듈화, 관심사 분리를 통해 유지보수성과 확장성을 고려한 아키텍처 설계 경험.
+- **협업 고려 설계**: 단일 프로젝트였지만, **공통 모듈화(파일 업로드, 인증 로직)**와 일관된 DB 구조를 통해 협업 상황에서도 중복을 줄이고 코드 일관성을 유지할 수 있도록 설계.
 
 ### 개선할 점
 
-- 파일 업로드 로컬 저장 → AWS S3 등 클라우드 스토리지 전환 필요.
+- 파일 업로드: 로컬 저장 → AWS S3 등 클라우드 스토리지 전환 필요.
 
-- AI 모델은 공개 Hugging Face 모델 사용 → 서비스 특화 파인튜닝 고려.
+- AI 모델: 공개 Hugging Face 모델 사용 → 서비스 특화 파인튜닝 고려.
 
-- 테스트 코드 커버리지가 낮음 → JUnit + MockMvc 기반 확대 예정.
-
-- 배포 자동화(CI/CD) 및 Docker/K8s 기반 운영 환경 개선 필요.
+- 테스트: JUnit + MockMvc 기반 테스트 코드 커버리지 확대 필요.
+  
+- 배포: CI/CD 자동화 및 Docker/K8s 기반 운영 환경 개선 필요.
