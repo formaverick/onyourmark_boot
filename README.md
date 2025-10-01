@@ -103,74 +103,132 @@ graph TD
 
 ## 🌊 시퀀스 다이어그램 (Sequence Diagrams)
 
-### 1. 리뷰 게시판 + 감성 분석
+### 1. 🖇️ JWT 인증/인가
 
 ```mermaid
 sequenceDiagram
     participant User as 사용자
-    participant Frontend as 프론트엔드 (React)
-    participant Backend as 백엔드 (Spring)
-    participant HuggingFace as 감성분석 (Python)
-    participant DB as 데이터베이스
+    participant React as React (Login.jsx + useAuth)
+    participant AuthController as Spring AuthController
+    participant AuthService as AuthService
+    participant JwtUtil as JwtUtil
+    participant Filter as JwtAuthFilter
+    participant DB as Database
 
-    User->>Frontend: 리뷰 작성 및 제출
-    Frontend->>Backend: POST /api/review (리뷰 내용, 이미지, JWT)
-    Backend->>Backend: JwtAuthFilter: 토큰 유효성 검사
-    Backend->>Backend: ReviewController -> ReviewService.create()
-    Backend->>HuggingFace: POST /api/analyze (리뷰 내용)
-    HuggingFace-->>Backend: 감성 분석 결과 (sentiment 점수)
-    Backend->>DB: INSERT INTO review (내용, sentiment, user_id)
-    DB-->>Backend: 저장된 리뷰 ID 반환
-    Backend->>Backend: 이미지 파일 시스템에 저장
-    Backend->>DB: INSERT INTO review_img (review_id, img_url)
-    DB-->>Backend: 저장 완료
-    Backend-->>Frontend: 생성된 리뷰 정보 (JSON)
-    Frontend->>User: "리뷰 등록 완료" 알림 및 상세 페이지로 이동
+    %% --- 로그인 ---
+    User->>React: 아이디/비밀번호 입력
+    React->>AuthController: POST /api/auth/login
+    AuthController->>AuthService: login(request)
+    AuthService->>DB: 사용자 조회
+    DB-->>AuthService: 사용자 정보 반환
+
+    alt 비밀번호 일치
+        AuthService->>JwtUtil: createToken(user)
+        JwtUtil-->>AuthService: JWT Access Token
+        AuthService-->>AuthController: token
+        AuthController-->>React: { "token": "JWT" }
+        React->>React: localStorage.setItem("token")
+        React->>React: jwtDecode(token) → role, userid
+        React-->>User: "로그인 성공" 알림 + 페이지 이동
+    else 불일치
+        AuthController-->>React: 401 Unauthorized
+        React-->>User: "로그인 실패" 알림
+    end
+
+    %% --- 보호된 API 접근 ---
+    User->>React: 보호된 페이지 접근
+    React->>AuthController: API 요청 (Authorization: Bearer JWT)
+    AuthController->>Filter: JwtAuthFilter.doFilterInternal()
+    Filter->>JwtUtil: validateToken(token)
+    JwtUtil-->>Filter: userid, role
+    Filter->>Filter: SecurityContext에 ROLE 저장
+    AuthController->>DB: 비즈니스 로직 실행
+    DB-->>AuthController: 결과 반환
+    AuthController-->>React: 데이터 응답
+    React-->>User: ROLE 기반 UI 렌더링
 ```
 
-### 2. JWT 인증 (관리자 공지사항 삭제 예시)
+### 2. 🖇️ 리뷰 작성 & 분석
 
 ```mermaid
 sequenceDiagram
-    participant User as 사용자/관리자
-    participant Frontend as 프론트엔드 (React)
-    participant Backend as 백엔드 (Spring)
-    participant DB as 데이터베이스
+    participant User as 사용자
+    participant React as React (ReviewForm.jsx)
+    participant ReviewController as Spring ReviewController
+    participant ReviewService as ReviewService
+    participant Flask as Flask AI Service
+    participant DB as Database
 
-    %% --- 1. 로그인 및 토큰 발급 ---
-    User->>Frontend: 관리자 아이디/비밀번호 입력 후 로그인
-    Frontend->>Backend: POST /api/auth/login (userid, password)
-    Backend->>DB: SELECT * FROM user WHERE userid=?
-    DB-->>Backend: 관리자 정보 반환 (role='ADMIN')
-    Backend->>Backend: 비밀번호 검증 (PasswordEncoder)
-    alt 비밀번호 일치
-        Backend->>Backend: JWT 생성 (role: ADMIN 포함)
-        Backend-->>Frontend: JWT 토큰 반환
-        Frontend->>Frontend: localStorage에 JWT 저장
-        Frontend->>User: 로그인 성공 → 관리자 페이지 이동
-    else 비밀번호 불일치
-        Backend-->>Frontend: 401 Unauthorized
+    %% --- 리뷰 작성 ---
+    User->>React: 리뷰 작성 + 이미지 첨부
+    React->>ReviewController: POST /api/review (content + imgs, JWT)
+    ReviewController->>ReviewService: create(content, imgs, memberId)
+
+    %% --- AI 감성 분석 ---
+    ReviewService->>Flask: POST /analyze { content }
+    Flask-->>ReviewService: { sentiment: 1~5 }
+
+    %% --- DB 저장 ---
+    ReviewService->>DB: INSERT review (content, sentiment, member_id)
+    ReviewService->>DB: INSERT review_img (파일 저장 후 URL)
+    DB-->>ReviewService: review_id 반환
+
+    %% --- 응답 ---
+    ReviewService-->>ReviewController: ReviewResponse DTO
+    ReviewController-->>React: { id, content, sentiment, relatedReviews }
+    React-->>User: "리뷰 등록 완료" + 상세페이지 이동
+
+    %% --- 리뷰 상세 조회 ---
+    User->>React: 리뷰 상세 페이지 접근
+    React->>ReviewController: GET /api/review/{id}
+    ReviewController->>ReviewService: getOne(id)
+    ReviewService->>DB: SELECT review + 유사 리뷰 조회
+    DB-->>ReviewService: 데이터 반환
+    ReviewService-->>React: ReviewResponse
+    React-->>User: 리뷰 상세 + 유사 리뷰 추천 표시
+```
+
+### 3. 🖇️ Q&A 게시판
+
+```mermaid
+sequenceDiagram
+    participant User as 사용자 (회원/비회원)
+    participant React as React (Board.jsx)
+    participant BoardController as Spring BoardController
+    participant BoardService as BoardService
+    participant BoardRepostController as BoardRepostController
+    participant BoardRepostService as BoardRepostService
+    participant DB as Database
+
+    %% --- 게시글 작성 ---
+    User->>React: 문의 작성 (회원 or 비회원)
+    React->>BoardController: POST /api/board/new
+    BoardController->>BoardService: create(request, userid)
+    BoardService->>DB: INSERT board_post
+    DB-->>BoardService: board_id
+    BoardService-->>BoardController: id
+    BoardController-->>React: 게시글 등록 완료
+
+    %% --- 게시글 조회 ---
+    User->>React: 게시글 상세 페이지 접근
+    React->>BoardController: GET /api/board/{id}
+    BoardController->>BoardService: read(id, password, isAdmin)
+    alt 비회원 + 비밀글
+        BoardService->>BoardService: 비밀번호 검증
+        BoardService-->>BoardController: Forbidden(403)
+    else 관리자
+        BoardService-->>BoardController: 비밀번호 검증 생략
     end
+    BoardController-->>React: 게시글 상세 + 답변 여부(hasRepost)
 
-    %% --- 2. 관리자 권한으로 공지사항 삭제 ---
-    User->>Frontend: 공지사항 '삭제' 버튼 클릭
-    Frontend->>Frontend: localStorage에서 JWT 꺼내기
-    Frontend->>Backend: DELETE /api/notices/{id} (Authorization: Bearer JWT)
-
-    Backend->>Backend: JwtAuthFilter → 토큰 검증
-    Backend->>Backend: JWT Payload 추출 (sub, role=ADMIN)
-    Backend->>Backend: SecurityContext에 ROLE_ADMIN 저장
-    Backend->>Backend: @PreAuthorize("hasRole('ADMIN')") 검사
-
-    alt 권한 확인 성공
-        Backend->>Backend: Service 공지사항 삭제 호출
-        Backend->>DB: DELETE FROM notice WHERE id=? (트랜잭션)
-        DB-->>Backend: 삭제 성공
-        Backend-->>Frontend: 204 No Content
-        Frontend->>User: UI에서 공지사항 제거 및 완료 메시지
-    else 권한 없음
-        Backend-->>Frontend: 403 Forbidden
-    end
+    %% --- 관리자 답변 ---
+    User->>React: (관리자) 답변 작성
+    React->>BoardRepostController: POST /api/reposts/{boardId} (ADMIN JWT)
+    BoardRepostController->>BoardRepostService: create(boardId, request, adminId)
+    BoardRepostService->>DB: INSERT board_repost
+    DB-->>BoardRepostService: repost_id
+    BoardRepostService-->>BoardRepostController: id
+    BoardRepostController-->>React: 답변 등록 완료
 ```
 
 <br>
@@ -207,10 +265,24 @@ sequenceDiagram
 
 ## ✨ 주요 기능
 
-### 1. JWT 기반 인증 및 인가
+### 1. 🔑 JWT 기반 인증 및 인가
 
-- Spring Security를 커스터마이징하여 Stateless한 JWT(Access/Refresh Token) 기반 인증/인가 시스템을 구축했습니다.
-- `OncePerRequestFilter`를 상속받은 `JwtAuthFilter`를 구현하여, 인증/인가 로직을 비즈니스 로직과 분리하고 코드의 재사용성과 유지보수성을 향상시켰습니다.
+- **Stateless 인증 구조**
+  - Spring Security + JWT를 활용해 **세션을 사용하지 않는 인증/인가 시스템**을 구현했습니다.
+  - Access Token에는 `userid`, `username`, `memberId`, `role` 정보를 담아 발급하고, 만료 시간은 **1시간**으로 설정했습니다.
+
+- **백엔드 인증 처리**
+  - `AuthController` → 로그인 요청 처리 및 JWT 발급
+  - `AuthService` → 사용자 검증 & 토큰 생성 로직
+  - `JwtUtil` → JWT 생성/검증 및 Payload 추출
+  - `JwtAuthFilter` → 매 요청마다 토큰 검증 후 `SecurityContext`에 인증 정보 저장
+
+- **프론트엔드 인증 처리**
+  - React `Login.jsx`에서 로그인 요청 → 응답 토큰을 `localStorage`에 저장
+  - `jwtDecode`로 payload 파싱 후 `useAuth` 훅에서 상태 관리
+  - ROLE에 따라 버튼(예: 관리자 전용)이나 페이지 접근 제어
+
+<br>
 
 ```java
 // JwtAuthFilter.java
@@ -243,12 +315,57 @@ sequenceDiagram
     }
 ```
 
+```java
+// JwtUtil.java (발췌)
+public String createToken(User user){
+    Date now = new Date();
+    Date expiryDate = new Date(now.getTime() + EXPIRATION_TIME);
+
+    return Jwts.builder()
+            .setSubject(user.getUserid())
+            .claim("memberId", user.getId())
+            .claim("username", user.getUsername())
+            .claim("role", user.getRole().name())
+            .setIssuedAt(now)
+            .setExpiration(expiryDate)
+            .signWith(key, SignatureAlgorithm.HS256)
+            .compact();
+}
+```
+
+```java
+// useAuth.js (발췌)
+const parseToken = () => {
+  const token = localStorage.getItem("token");
+  if (!token) return { token: null, role: null };
+
+  const decoded = jwtDecode(token);
+  if (decoded.exp * 1000 <= Date.now()) {
+    localStorage.removeItem("token");
+    return { token: null, role: null };
+  }
+  return { token, role: decoded.role };
+};
+```
+
 <br>
 
-### 2. AI 감성 분석 기반 리뷰 (Hugging Face 연동)
+---
 
-- 사용자가 리뷰를 작성하면, 백엔드에서 Python(Flask)으로 구현된 AI 서버에 API 요청을 보내 리뷰 텍스트의 감성을 분석합니다.
-- AI/ML 로직을 별도의 마이크로서비스로 분리하여, 각 서비스가 독립적으로 개발/배포/확장될 수 있는 유연한 구조를 설계했습니다.
+### 2. 💡 AI 감성 분석 기반 리뷰 (Hugging Face 연동)
+
+- **리뷰 작성 & 이미지 업로드**
+  - React `ReviewForm`에서 작성자가 리뷰를 입력하고 이미지를 선택하면 `multipart/form-data`로 Spring 서버에 전송합니다.
+  - 로그인하지 않은 사용자는 접근할 수 없으며, 작성자 본인만 삭제 버튼이 노출됩니다.
+
+- **AI 감성 분석 (Flask)**
+  - Spring `ReviewService`에서 Flask 서버의 `/analyze` API를 호출해 리뷰 텍스트의 감성 점수(sentiment)를 분석합니다.
+  - Flask 서버는 Hugging Face 모델을 사용해 감성 분석을 수행하고, 결과를 JSON으로 반환합니다.
+
+- **유사 리뷰 추천**
+  - DB Native Query(`ReviewRepository.findSimilarReviews`)로 sentiment 값이 유사한 리뷰 5개를 조회하여 함께 응답합니다.
+  - 프론트엔드에서는 `ReviewDetail` 화면 하단에 “다른 리뷰도 구경해보세요!” 섹션으로 표시됩니다.
+
 
 ```java
 // ReviewService.java
@@ -268,37 +385,256 @@ private int analyzeSentiment(String content) {
 }
 ```
 
-<br>
-
-### 3. 복합 비즈니스 로직을 처리하는 게시판
-
-- 회원/비회원 모두 작성 가능하며, 비밀글 기능까지 포함된 게시판을 구현했습니다.
-- Builder 패턴과 `@Transactional`을 적용하여 객체 생성의 안정성과 데이터의 정합성을 확보했습니다.
+```java
+# Flask 서버 (app.py)
+@app.route('/analyze', methods=['POST'])
+def api_analyze():
+    data = request.get_json()
+    content = data.get("content", "").strip()
+    sentiment = analyze_sentiment(content)
+    return jsonify({"status": "success", "sentiment": sentiment})
+```
 
 ```java
-// BoardService.java
-@Transactional
-public Long create(BoardPostCreateRequest request, String userid) {
-    BoardPost.BoardPostBuilder b = BoardPost.builder()
-            .title(request.getTitle())
-            .content(request.getContent())
-            .postPassword(passwordEncoder.encode(request.getPostPassword()))
-            .isSecret(request.isSecret());
+// ReviewForm.jsx (React)
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  const formData = new FormData();
+  formData.append("content", content);
+  imgs.forEach(img => formData.append("imgs", img));
 
-    if (userid != null) { // 회원
-        User u = userRepository.findByUserid(userid).orElseThrow(() -> new RuntimeException("사용자가 존재하지 않습니다."));
-        b.writerType(WriterType.MEMBER).member(u);
-    } else { // 비회원
-        if (request.getWriterName() == null || request.getWriterName().isBlank()) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "작성자명을 입력해주세요.");
-        }
-        b.writerType(WriterType.GUEST).writerName(request.getWriterName());
-    }
-    return boardRepository.save(b.build()).getId();
-}
+  const res = await api.post("/api/review", formData, {
+    headers: { "Content-Type": "multipart/form-data", Authorization: `Bearer ${auth.token}` },
+  });
+
+  alert("리뷰가 등록되었습니다.");
+  navigate(`/review/${res.data.id}`);
+};
 ```
 
 <br>
+
+---
+
+### 3. 📝 복합 비즈니스 로직을 처리하는 Q&A 게시판 (회원/비회원 작성 + 관리자 답변)
+
+- **회원/비회원 작성 지원**
+  - 회원: 로그인 후 바로 작성 가능
+  - 비회원: 작성자명 + 비밀번호 입력 필수
+  - 작성 시 **비공개 설정** 가능 → 비밀번호 입력해야 조회 가능
+
+- **권한 기반 접근 제어**
+  - 본인(회원/비회원) 또는 관리자만 수정/삭제 가능
+  - 비공개 글은 작성자 비밀번호 검증 필요
+  - 관리자는 ROLE 확인 후 모든 글 접근 가능
+
+- **관리자 답변**
+  - `@PreAuthorize("hasRole('ADMIN')")` 기반으로 관리자만 답변 CRUD 가능
+  - 게시글당 답변은 1개만 등록 가능 (중복 방지)
+
+```java
+// BoardService.java - 게시글 작성
+  public Long create(BoardPostCreateRequest request, String userid){
+        BoardPost.BoardPostBuilder b = BoardPost.builder()
+                .title(request.getTitle())
+                .content(request.getContent())
+                .postPassword(passwordEncoder.encode(request.getPostPassword()))
+                .isSecret(request.isSecret());
+
+        if(userid != null){
+            User u = userRepository.findByUserid(userid)
+                    .orElseThrow(() -> new RuntimeException("사용자가 존재하지 않습니다."));
+            b.writerType(WriterType.MEMBER).member(u).writerName(null);
+        }else {
+            if(request.getWriterName() == null || request.getWriterName().isBlank()){
+                throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "작성자명을 입력해주세요.");
+            }
+
+            b.writerType(WriterType.GUEST).writerName(request.getWriterName()).member(null);
+        }
+
+        return boardRepository.save(b.build()).getId();
+    }
+```
+
+```java
+// BoardRepostController.java - 관리자 답변 작성
+@PreAuthorize("hasRole('ADMIN')")
+@PostMapping("/{boardId}")
+public ResponseEntity<Long> create(
+  @PathVariable Long boardId,
+  @RequestBody BoardRepostCreateRequest request,
+  Authentication authentication
+){
+        String userid = authentication.getName();
+        Long id = repostService.create(boardId, request, userid);
+
+        return ResponseEntity.ok(id);
+    }
+```
+
+<details>
+  <summary><b>💻 프론트엔드 (React Q&A 게시판) (클릭)</b></summary>
+  
+  Q&A 게시판은 React 컴포넌트 단위(BoardPage.jsx)로 구성되어 있으며, **회원/비회원 작성, 비밀번호 검증, 관리자 답변 작성**까지 모두 지원합니다.
+
+  #### 1) 📋 게시판 목록 (BoardMain.jsx)
+
+  - 서버에서 게시글 리스트를 불러오고 페이지네이션을 적용했습니다.
+  - **비밀글 🔒 아이콘 표시**, **관리자 답변 상태(대기/완료)** 표시 기능이 있습니다.
+
+  ```jsx
+  const fetchBoardList = async (page = 0) => {
+    const response = await api.get(`/api/board?page=${page}&size=20&sort=createdAt,desc`);
+    setBoardList(response.data.content || []);
+  };
+  ```
+
+#### 2) ✍️ 게시글 작성 / 수정 (BoardWriteUser.jsx)
+- 회원: 로그인 상태에서 바로 작성 가능
+- 비회원: 작성자명 + 비밀번호 필수 입력
+- 수정 모드: 기존 비밀번호 확인 후 수정 가능
+
+```java
+const createPost = async () => {
+    try {
+      const body = {
+        title: formData.title,
+        content: formData.content,
+        writerName: formData.writerName, // 항상 전송
+        postPassword: createPassword,
+        isSecret: formData.isSecret,
+      };
+      const res = await api.post("/api/board/new", body);
+      return res.data;
+    } catch (err) {
+      throw new Error(
+        err.response?.data?.message ||
+          err.message ||
+          "게시글 작성 중 오류가 발생했습니다."
+      );
+    }
+  };
+```
+
+#### 3) 🔑 비밀글 접근 (BoardPassword.jsx)
+- 비회원이 작성한 비밀글 접근 시 비밀번호 입력 창을 노출
+- 입력값 검증 후, 서버로 API 요청 → 성공 시 상세조회 가능
+
+```java
+const handlePasswordSubmit = async (e) => {
+    e.preventDefault();
+    if (!password.trim()) return setError("비밀번호를 입력해주세요.");
+    try {
+      setLoading(true);
+      setError("");
+      const res = await api.get(`/api/board/${post.id}`, {
+        params: { password },
+      });
+      onPasswordSuccess({ ...res.data, password }); // 상세/수정 재호출에 사용
+    } catch (err) {
+      if (err.response?.status === 403)
+        setError("비밀번호가 일치하지 않습니다.");
+      else if (err.response?.status === 404)
+        setError("게시글을 찾을 수 없습니다.");
+      else
+        setError(
+          err.response?.data?.message || err.message || "오류가 발생했습니다."
+        );
+    } finally {
+      setLoading(false);
+    }
+  };
+```
+
+#### 4) 📖 게시글 상세 (BoardDetail.jsx)
+- 제목, 작성자(마스킹), 작성일, 조회수 등 메타 정보 표시
+- 본인(또는 관리자)만 수정/삭제 버튼 노출
+- 관리자 답변 영역 연동
+
+```java
+// 게시글 상세 조회
+  const fetchPostDetail = async (id, password = null) => {
+    try {
+      setLoading(true);
+      const params = password ? { password } : {};
+      const response = await api.get(`/api/board/${id}`, { params });
+      const data = response.data;
+      setPostData(data);
+      setError(null);
+    } catch (err) {
+      if (err.response?.status === 403) {
+        setError("비밀번호가 일치하지 않습니다.");
+      } else if (err.response?.status === 404) {
+        setError("게시글을 찾을 수 없습니다.");
+      } else {
+        setError(
+          err.response?.data?.message ||
+            err.message ||
+            "게시글을 불러오는데 실패했습니다."
+        );
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
+```
+
+```java
+// 답변 조회
+  const fetchRepost = async () => {
+    try {
+      const res = await api.get(`/api/reposts/${post.id}`);
+      setRepostData(res.data);
+    } catch (err) {
+      setRepostData(null);
+    }
+  };
+```
+
+#### 5) 🛠 관리자 답변 작성 / 수정 (BoardRepostWrite.jsx)
+- ADMIN 권한 계정만 접근 가능
+- 답변 작성/수정 API 연동
+
+```java
+  const handleSubmit = async () => {
+    if (!content.trim()) {
+      alert("답변 내용을 입력하세요.");
+      return;
+    }
+    try {
+      setLoading(true);
+      if (mode === "create") {
+        await api.post(`/api/reposts/${post.id}`, { content });
+        alert("답변이 등록되었습니다.");
+      } else {
+        await api.put(`/api/reposts/${post.id}`, { content });
+        alert("답변이 수정되었습니다.");
+      }
+      onSuccess();
+    } catch (err) {
+      alert(err.response?.data?.message || err.message || "오류 발생");
+    } finally {
+      setLoading(false);
+    }
+  };
+```
+
+#### 6) 📌 페이지 전체 흐름 (BoardPage.jsx)
+list → detail → write/edit → repostWrite/edit → password 모드로 전환, 각 상태에 따라 컴포넌트 렌더링 제어
+
+```java
+{mode === "list" && <BoardMain onPostSelect={handlePostSelect} />}
+{mode === "password" && <BoardPassword post={selectedPost} />}
+{mode === "detail" && <BoardDetail post={selectedPost} />}
+{mode === "write" && <BoardWriteUser mode="write" />}
+{mode === "edit" && <BoardWriteUser mode="edit" post={selectedPost} />}
+```
+</details>
+
+<br>
+
+---
 
 ### 4. 안정적인 파일 업로드
 
