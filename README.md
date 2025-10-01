@@ -491,12 +491,15 @@ https://github.com/user-attachments/assets/7cff6deb-b71f-4440-ab76-a543d5d1e846
 
 <br>
 
-<details> <summary>📂 전체 화면 더보기</summary>
+<details> 
+
+<summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="리뷰 - 리스트페이지" src="https://github.com/user-attachments/assets/b8d36d8c-a595-4c2d-b002-0aa259361e4a" />
 <img width="45%" alt="리뷰 - 작성페이지" src="https://github.com/user-attachments/assets/79bd857e-56e3-4971-946f-8ac12ddfb11f" />
 <img width="45%" alt="리뷰 - 작성(로그인필요알림)" src="https://github.com/user-attachments/assets/562bea68-eb57-43af-bf40-9692d75e172d" />
 <img width="45%" alt="리뷰 - 등록 완료 상세 페이지 ( 로그인 시 삭제 버튼 노출 )" src="https://github.com/user-attachments/assets/c481cfc1-8d0d-435d-802e-f45841dea07a" />
 <img width="45%" alt="리뷰 - 삭제 확인 알림창" src="https://github.com/user-attachments/assets/daf02093-1cfe-450a-abff-9f231a9a1982" />
+
 </details>
 
 <br>
@@ -519,7 +522,9 @@ https://github.com/user-attachments/assets/00a4aa2b-4adb-484c-bc8a-195c9c102d4d
 
 <br>
 
-<details> <summary>📂 전체 화면 더보기</summary>
+<details> 
+
+<summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="Q A - 리스트" src="https://github.com/user-attachments/assets/8d930b1d-d466-4ce3-9b3c-1b08c69dabb6" />
 <img width="45%" alt="Q A - 문의 작성(회원)" src="https://github.com/user-attachments/assets/054193a8-6b4c-4cae-90a4-dfa2abd8e582" />
 <img width="45%" alt="Q A - (회원)내문의내역 확인" src="https://github.com/user-attachments/assets/bd916321-aa72-4c86-a7e6-587b23888bae" />
@@ -532,6 +537,7 @@ https://github.com/user-attachments/assets/00a4aa2b-4adb-484c-bc8a-195c9c102d4d
 <img width="45%" alt="Q A - (관리자)문의 답변 노출" src="https://github.com/user-attachments/assets/fad1f9cb-607d-4925-a1c6-390a33747ac4" />
 <img width="45%" alt="Q A - (관리자)문의 답변 등록 완료 알림" src="https://github.com/user-attachments/assets/e6ccf120-16b6-42aa-afd9-dd0e054f7dfc" />
 <img width="45%" alt="Q A - (관리자)문의 답변 수정 완료 페이지" src="https://github.com/user-attachments/assets/2610a0e6-de50-445d-be59-cfc8878ee142" />
+
 </details>
 
 <br>
@@ -552,11 +558,14 @@ https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
 
 <br>
 
-<details> <summary>📂 전체 화면 더보기</summary>
+<details> 
+
+<summary>📂 전체 화면 더보기</summary>
 <img width="45%" alt="캘린더 - 등록 페이지" src="https://github.com/user-attachments/assets/5c91d1fc-f31a-4fc9-b69f-ee2062612a91" />
 <img width="45%" alt="캘린더 - 리스트" src="https://github.com/user-attachments/assets/eef3cd5d-ef63-43e5-97db-09a4e31b49e1" />
 <img width="45%" alt="캘린더 - 상세페이지(하단)" src="https://github.com/user-attachments/assets/e5643603-e303-410e-941a-5a10ad9c83d1" />
 <img width="45%" alt="캘린더 - 상세페이지(하단, 관리자 외)" src="https://github.com/user-attachments/assets/f7954439-d9f0-4536-afd2-e60e8526c1b3"고
+
 </details>
   
 <br>
