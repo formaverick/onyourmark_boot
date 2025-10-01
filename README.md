@@ -557,7 +557,8 @@ https://github.com/user-attachments/assets/90a01640-8e21-4369-bad4-d7e3fcfceb64
 <img width="45%" alt="캘린더 - 리스트" src="https://github.com/user-attachments/assets/eef3cd5d-ef63-43e5-97db-09a4e31b49e1" />
 <img width="45%" alt="캘린더 - 상세페이지(하단)" src="https://github.com/user-attachments/assets/e5643603-e303-410e-941a-5a10ad9c83d1" />
 <img width="45%" alt="캘린더 - 상세페이지(하단, 관리자 외)" src="https://github.com/user-attachments/assets/f7954439-d9f0-4536-afd2-e60e8526c1b3"고
-
+</details>
+  
 <br>
 
 ## 📝 회고
